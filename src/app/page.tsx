@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -68,9 +69,9 @@ export default function DashboardPage() {
           <Tabs defaultValue="overview" className="space-y-4">
             <TabsList>
               <TabsTrigger value="overview">Overview</TabsTrigger>
-              {/* <TabsTrigger value="analytics">Analytics</TabsTrigger> */}
+              <TabsTrigger value="analytics">Analytics</TabsTrigger>
               <TabsTrigger value="reports">Reports</TabsTrigger>
-              {/* <TabsTrigger value="notifications">Notifications</TabsTrigger> */}
+              <TabsTrigger value="notifications">Notifications</TabsTrigger>
             </TabsList>
             <TabsContent value="overview" className="space-y-4">
               <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
@@ -211,8 +212,13 @@ export default function DashboardPage() {
                       </div>
                     </div>
                   </CardContent>
-                  <CardFooter className="flex justify-center w-full">
-                    <Button className="bg-green-600 w-1/2">Fund Info</Button>
+                  <CardFooter>
+                    <Link
+                      href="/blackrock-robotics-and-ai-etf"
+                      className="w-full flex justify-center"
+                    >
+                      <Button className="bg-green-600 w-1/2">Fund Info</Button>
+                    </Link>
                   </CardFooter>
                 </Card>
                 <Card>
