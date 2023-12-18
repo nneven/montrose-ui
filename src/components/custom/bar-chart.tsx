@@ -53,8 +53,7 @@ export function SimpleBarChart() {
         <CartesianGrid strokeDasharray="3 3" />
         <XAxis type="number" tickFormatter={(value) => `${value}%`} />
         <YAxis dataKey="name" type="category" />
-        <Tooltip formatter={(value) => `${value}%`} />
-        {/* <Legend /> */}
+        <Tooltip formatter={(value) => [`${value}%`]} />
         <Bar dataKey="value" fill="#175a92" />
       </BarChart>
     </ResponsiveContainer>

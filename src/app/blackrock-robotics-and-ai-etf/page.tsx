@@ -18,12 +18,13 @@ import { MainNav } from "@/components/examples/main-nav";
 import { Search } from "@/components/examples/search";
 import TeamSwitcher from "@/components/examples/team-switcher";
 import { UserNav } from "@/components/examples/user-nav";
-import { RecentSales } from "@/components/examples/recent-sales";
 
-import { SimplePieChart } from "@/components/custom/pie-chart";
-import { SimpleBarChart } from "@/components/custom/bar-chart";
 import { DataTable } from "@/components/custom/holdings-table";
 import { DataSources } from "@/components/custom/data-sources";
+import { SimpleLineChart } from "@/components/custom/line-chart";
+import { SimpleBarChart } from "@/components/custom/bar-chart";
+import { SimplePieChart } from "@/components/custom/pie-chart";
+import { TeamAccordion } from "@/components/custom/team-accordion";
 
 export const metadata: Metadata = {
   title: "Dashboard",
@@ -233,13 +234,21 @@ export default function DashboardPage() {
                   </CardContent>
                 </Card>
               </div>
-              <div className="grid gap-4 md:grid-cols-1 lg:grid-cols-2">
-                <Card>
+              <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+                <Card className="col-span-1">
                   <CardHeader className="-mb-4">
                     <CardTitle>Portfolio Managers</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <RecentSales />
+                    <TeamAccordion />
+                  </CardContent>
+                </Card>
+                <Card className="col-span-2">
+                  <CardHeader>
+                    <CardTitle>NAV per Share</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <SimpleLineChart />
                   </CardContent>
                 </Card>
               </div>
