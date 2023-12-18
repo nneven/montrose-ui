@@ -245,7 +245,12 @@ export default function DashboardPage() {
                 </Card>
                 <Card className="col-span-2">
                   <CardHeader>
-                    <CardTitle>NAV per Share</CardTitle>
+                    <CardTitle>Historical NAV per Share</CardTitle>
+                    <CardDescription>
+                      <p className="text-xs text-muted-foreground">
+                        as of Dec 15, 2023
+                      </p>
+                    </CardDescription>
                   </CardHeader>
                   <CardContent>
                     <SimpleLineChart />
