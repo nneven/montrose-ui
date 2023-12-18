@@ -44,18 +44,22 @@ import {
 } from "@/components/ui/select";
 
 const groups = [
-  //   {
-  //     label: "Personal Account",
-  //     teams: [
-  //       {
-  //         label: "Nicolas Neven",
-  //         value: "personal",
-  //       },
-  //     ],
-  //   },
+  {
+    label: "Personal Account",
+    teams: [
+      {
+        label: "Nicolas Neven",
+        value: "personal",
+      },
+    ],
+  },
   {
     label: "Teams",
     teams: [
+      {
+        label: "Entrepreneur First",
+        value: "entrepreneur-first",
+      },
       {
         label: "AlTi Global",
         value: "alti-global",
