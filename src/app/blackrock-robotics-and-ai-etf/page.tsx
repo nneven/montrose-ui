@@ -18,67 +18,12 @@ import { MainNav } from "@/components/examples/main-nav";
 import { Search } from "@/components/examples/search";
 import TeamSwitcher from "@/components/examples/team-switcher";
 import { UserNav } from "@/components/examples/user-nav";
-// import { Overview } from "@/components/examples/overview";
 import { RecentSales } from "@/components/examples/recent-sales";
+
 import { SimplePieChart } from "@/components/custom/pie-chart";
 import { SimpleBarChart } from "@/components/custom/bar-chart";
 import { DataTable } from "@/components/custom/holdings-table";
-
-import {
-  LineChart,
-  Line,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
-  Legend,
-  ResponsiveContainer,
-} from "recharts";
-
-const data = [
-  {
-    name: "Page A",
-    uv: 4000,
-    pv: 2400,
-    amt: 2400,
-  },
-  {
-    name: "Page B",
-    uv: 3000,
-    pv: 1398,
-    amt: 2210,
-  },
-  {
-    name: "Page C",
-    uv: 2000,
-    pv: 9800,
-    amt: 2290,
-  },
-  {
-    name: "Page D",
-    uv: 2780,
-    pv: 3908,
-    amt: 2000,
-  },
-  {
-    name: "Page E",
-    uv: 1890,
-    pv: 4800,
-    amt: 2181,
-  },
-  {
-    name: "Page F",
-    uv: 2390,
-    pv: 3800,
-    amt: 2500,
-  },
-  {
-    name: "Page G",
-    uv: 3490,
-    pv: 4300,
-    amt: 2100,
-  },
-];
+import { DataSources } from "@/components/custom/data-sources";
 
 export const metadata: Metadata = {
   title: "Dashboard",
@@ -134,7 +79,7 @@ export default function DashboardPage() {
           <Tabs defaultValue="overview" className="space-y-4">
             <TabsList>
               <TabsTrigger value="overview">Overview</TabsTrigger>
-              {/* <TabsTrigger value="analytics">Analytics</TabsTrigger> */}
+              <TabsTrigger value="analytics">Analytics</TabsTrigger>
               <TabsTrigger value="reports">Reports</TabsTrigger>
               <TabsTrigger value="downloads">Downloads</TabsTrigger>
             </TabsList>
@@ -256,7 +201,17 @@ export default function DashboardPage() {
                       an index composed of developed and emerging market
                       companies that could benefit from the long-term growth and
                       innovation in robotics technologies and artificial
-                      intelligence.
+                      intelligence. Lorum ipsum dolor sit amet, consectetur
+                      adipiscing elit. Sed scelerisque elit eget justo interdum,
+                      et ullamcorper velit consectetur. Sed in ultrices nunc. In
+                      hac habitasse platea dictumst. Sed vitae purus euismod,
+                      aliquet tortor sit amet, consequat augue. Donec ut nisl in
+                      nisl aliquet aliquam. Donec id quam at velit imperdiet
+                      consequat. Sed sed mi sed nisl aliquet aliquam. Donec id
+                      quam at velit imperdiet consequat. Sed sed mi sed nisl
+                      aliquet aliquam. Donec id quam at velit imperdiet
+                      consequat. Sed sed mi sed nisl aliquet aliquam. Donec id
+                      quam at velit imperdiet consequat.
                     </p>
                   </CardContent>
                   <CardHeader>
@@ -275,6 +230,16 @@ export default function DashboardPage() {
                       3. Seek long-term growth with companies that can shape the
                       global economic future
                     </p>
+                  </CardContent>
+                </Card>
+              </div>
+              <div className="grid gap-4 md:grid-cols-1 lg:grid-cols-2">
+                <Card>
+                  <CardHeader className="-mb-4">
+                    <CardTitle>Portfolio Managers</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <RecentSales />
                   </CardContent>
                 </Card>
               </div>
@@ -364,7 +329,7 @@ export default function DashboardPage() {
                   <CardTitle>Data Sources</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <RecentSales />
+                  <DataSources />
                 </CardContent>
               </Card>
             </TabsContent>
