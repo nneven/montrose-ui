@@ -73,29 +73,7 @@ export default function DashboardPage() {
               <TabsTrigger value="reports">Reports</TabsTrigger>
               <TabsTrigger value="notifications">Notifications</TabsTrigger>
             </TabsList> */}
-            <TabsContent value="overview" className="space-y-4">
-              <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-8">
-                <Card className="col-span-5 h-[120vh]">
-                  <CardHeader>
-                    <CardTitle>Report</CardTitle>
-                  </CardHeader>
-                  <CardContent className="h-[calc(100%-4rem)]">
-                    <iframe
-                      className="w-full h-full"
-                      src="blackrock_report_jeff_demo.pdf"
-                    />
-                  </CardContent>
-                </Card>
-                <Card className="col-span-3">
-                  <CardHeader>
-                    <CardTitle>Data Sources</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <RecentSales />
-                  </CardContent>
-                </Card>
-              </div>
-            </TabsContent>
+            <TabsContent value="overview" className="space-y-4"></TabsContent>
           </Tabs>
         </div>
       </div>
