@@ -5518,7 +5518,7 @@ export function SimpleLineChart() {
           interval={300}
         />
         <YAxis tickFormatter={(tickItem) => `$${tickItem}`} />
-        <Tooltip formatter={(value) => [`$${value}`]} />
+        <Tooltip formatter={(value) => [`$${Number(value).toFixed(2)}`]} />
         <Line type="monotone" dataKey="value" stroke="#175a92" dot={false} />
       </LineChart>
     </ResponsiveContainer>
