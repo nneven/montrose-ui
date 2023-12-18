@@ -21,6 +21,62 @@ import { UserNav } from "@/components/examples/user-nav";
 // import { Overview } from "@/components/examples/overview";
 import { RecentSales } from "@/components/examples/recent-sales";
 
+import {
+  LineChart,
+  Line,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  Legend,
+  ResponsiveContainer,
+} from "recharts";
+
+const data = [
+  {
+    name: "Page A",
+    uv: 4000,
+    pv: 2400,
+    amt: 2400,
+  },
+  {
+    name: "Page B",
+    uv: 3000,
+    pv: 1398,
+    amt: 2210,
+  },
+  {
+    name: "Page C",
+    uv: 2000,
+    pv: 9800,
+    amt: 2290,
+  },
+  {
+    name: "Page D",
+    uv: 2780,
+    pv: 3908,
+    amt: 2000,
+  },
+  {
+    name: "Page E",
+    uv: 1890,
+    pv: 4800,
+    amt: 2181,
+  },
+  {
+    name: "Page F",
+    uv: 2390,
+    pv: 3800,
+    amt: 2500,
+  },
+  {
+    name: "Page G",
+    uv: 3490,
+    pv: 4300,
+    amt: 2100,
+  },
+];
+
 export const metadata: Metadata = {
   title: "Dashboard",
   description: "Example dashboard app built using the components.",
@@ -185,6 +241,50 @@ export default function DashboardPage() {
                   </CardContent>
                 </Card>
               </div>
+              <div className="grid gap-4 md:grid-cols-1 lg:grid-cols-2">
+                <Card>
+                  <CardHeader>
+                    <CardTitle>Investment Objective</CardTitle>
+                    <CardDescription>Card Description</CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <p>
+                      The iShares Robotics and Artificial Intelligence
+                      Multisector ETF seeks to track the investment results of
+                      an index composed of developed and emerging market
+                      companies that could benefit from the long-term growth and
+                      innovation in robotics technologies and artificial
+                      intelligence.
+                    </p>
+                  </CardContent>
+                  <CardFooter>
+                    <p>Card Footer</p>
+                  </CardFooter>
+                </Card>
+                <Card>
+                  <CardHeader>
+                    <CardTitle>Why IRBO?</CardTitle>
+                    <CardDescription>Card Description</CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <p>
+                      1. Exposure to companies at the forefront of robotics and
+                      artificial intelligence innovation
+                    </p>
+                    <p>
+                      2. Exposure to an equal-weighted index composed of global
+                      companies across the robotics and AI value chain
+                    </p>
+                    <p>
+                      3. Seek long-term growth with companies that can shape the
+                      global economic future
+                    </p>
+                  </CardContent>
+                  <CardFooter>
+                    <p>Card Footer</p>
+                  </CardFooter>
+                </Card>
+              </div>
               <Card>
                 <CardHeader>
                   <CardTitle>Card Title</CardTitle>
@@ -198,7 +298,46 @@ export default function DashboardPage() {
                 </CardFooter>
               </Card>
             </TabsContent>
-            <TabsContent value="analytics" className="space-y-4"></TabsContent>
+            <TabsContent value="analytics" className="space-y-4">
+              <Card>
+                <CardHeader>
+                  <CardTitle>Card Title</CardTitle>
+                  <CardDescription>Card Description</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p>Card Content</p>
+                </CardContent>
+                <CardFooter>
+                  <p>Card Footer</p>
+                </CardFooter>
+              </Card>
+              {/* <ResponsiveContainer width="100%" height="100%">
+                <LineChart
+                  width={500}
+                  height={300}
+                  data={data}
+                  margin={{
+                    top: 5,
+                    right: 30,
+                    left: 20,
+                    bottom: 5,
+                  }}
+                >
+                  <CartesianGrid strokeDasharray="3 3" />
+                  <XAxis dataKey="name" />
+                  <YAxis />
+                  <Tooltip />
+                  <Legend />
+                  <Line
+                    type="monotone"
+                    dataKey="pv"
+                    stroke="#8884d8"
+                    activeDot={{ r: 8 }}
+                  />
+                  <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
+                </LineChart>
+              </ResponsiveContainer> */}
+            </TabsContent>
             <TabsContent value="reports" className="space-y-4">
               <Card className="h-[120vh]">
                 <CardHeader>
