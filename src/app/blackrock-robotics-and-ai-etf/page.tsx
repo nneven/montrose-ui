@@ -20,6 +20,9 @@ import TeamSwitcher from "@/components/examples/team-switcher";
 import { UserNav } from "@/components/examples/user-nav";
 // import { Overview } from "@/components/examples/overview";
 import { RecentSales } from "@/components/examples/recent-sales";
+import { SimplePieChart } from "@/components/custom/pie-chart";
+import { SimpleBarChart } from "@/components/custom/bar-chart";
+import { DataTable } from "@/components/custom/holdings-table";
 
 import {
   LineChart,
@@ -131,7 +134,7 @@ export default function DashboardPage() {
           <Tabs defaultValue="overview" className="space-y-4">
             <TabsList>
               <TabsTrigger value="overview">Overview</TabsTrigger>
-              <TabsTrigger value="analytics">Analytics</TabsTrigger>
+              {/* <TabsTrigger value="analytics">Analytics</TabsTrigger> */}
               <TabsTrigger value="reports">Reports</TabsTrigger>
               <TabsTrigger value="downloads">Downloads</TabsTrigger>
             </TabsList>
@@ -241,11 +244,10 @@ export default function DashboardPage() {
                   </CardContent>
                 </Card>
               </div>
-              <div className="grid gap-4 md:grid-cols-1 lg:grid-cols-2">
+              <div className="grid gap-4 md:grid-cols-1 lg:grid-cols-1">
                 <Card>
                   <CardHeader>
                     <CardTitle>Investment Objective</CardTitle>
-                    <CardDescription>Card Description</CardDescription>
                   </CardHeader>
                   <CardContent>
                     <p>
@@ -257,14 +259,8 @@ export default function DashboardPage() {
                       intelligence.
                     </p>
                   </CardContent>
-                  <CardFooter>
-                    <p>Card Footer</p>
-                  </CardFooter>
-                </Card>
-                <Card>
                   <CardHeader>
                     <CardTitle>Why IRBO?</CardTitle>
-                    <CardDescription>Card Description</CardDescription>
                   </CardHeader>
                   <CardContent>
                     <p>
@@ -280,23 +276,60 @@ export default function DashboardPage() {
                       global economic future
                     </p>
                   </CardContent>
+                </Card>
+              </div>
+              <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+                <Card className="col-span-2">
+                  <CardHeader>
+                    <CardTitle>Sector Exposure</CardTitle>
+                    <CardDescription>
+                      <p className="text-xs text-muted-foreground">
+                        as of Dec 15, 2023
+                      </p>
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <SimpleBarChart />
+                  </CardContent>
+                </Card>
+                <Card className="col-span-1">
+                  <CardHeader>
+                    <CardTitle>Geographic Exposure</CardTitle>
+                    <CardDescription>
+                      <p className="text-xs text-muted-foreground">
+                        as of Dec 15, 2023
+                      </p>
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <SimplePieChart />
+                  </CardContent>
                   <CardFooter>
-                    <p>Card Footer</p>
+                    <p className="text-xs text-muted-foreground">
+                      Geographic exposure relates principally to the domicile of
+                      the issuers of the securities held in the product, added
+                      together and then expressed as a percentage of the
+                      product&apos;s total holdings, excluding currency
+                      holdings.
+                    </p>
                   </CardFooter>
                 </Card>
               </div>
-              <Card>
-                <CardHeader>
-                  <CardTitle>Card Title</CardTitle>
-                  <CardDescription>Card Description</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p>Card Content</p>
-                </CardContent>
-                <CardFooter>
-                  <p>Card Footer</p>
-                </CardFooter>
-              </Card>
+              <div className="grid gap-4 md:grid-cols-1 lg:grid-cols-1">
+                <Card>
+                  <CardHeader>
+                    <CardTitle>Holdings</CardTitle>
+                    <CardDescription>
+                      <p className="text-xs text-muted-foreground">
+                        as of Dec 15, 2023
+                      </p>
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <DataTable />
+                  </CardContent>
+                </Card>
+              </div>
             </TabsContent>
             <TabsContent value="analytics" className="space-y-4">
               <Card>
@@ -311,32 +344,6 @@ export default function DashboardPage() {
                   <p>Card Footer</p>
                 </CardFooter>
               </Card>
-              {/* <ResponsiveContainer width="100%" height="100%">
-                <LineChart
-                  width={500}
-                  height={300}
-                  data={data}
-                  margin={{
-                    top: 5,
-                    right: 30,
-                    left: 20,
-                    bottom: 5,
-                  }}
-                >
-                  <CartesianGrid strokeDasharray="3 3" />
-                  <XAxis dataKey="name" />
-                  <YAxis />
-                  <Tooltip />
-                  <Legend />
-                  <Line
-                    type="monotone"
-                    dataKey="pv"
-                    stroke="#8884d8"
-                    activeDot={{ r: 8 }}
-                  />
-                  <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
-                </LineChart>
-              </ResponsiveContainer> */}
             </TabsContent>
             <TabsContent value="reports" className="space-y-4">
               <Card className="h-[120vh]">
