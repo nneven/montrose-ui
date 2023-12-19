@@ -44,22 +44,22 @@ import {
 } from "@/components/ui/select";
 
 const groups = [
-  {
-    label: "Personal Account",
-    teams: [
-      {
-        label: "Nicolas Neven",
-        value: "personal",
-      },
-    ],
-  },
+  // {
+  //   label: "Personal Account",
+  //   teams: [
+  //     {
+  //       label: "Nicolas Neven",
+  //       value: "nicolas-neven",
+  //     },
+  //   ],
+  // },
   {
     label: "Teams",
     teams: [
-      {
-        label: "Entrepreneur First",
-        value: "entrepreneur-first",
-      },
+      // {
+      //   label: "Entrepreneur First",
+      //   value: "entrepreneur-first",
+      // },
       {
         label: "AlTi Global",
         value: "alti-global",
@@ -125,7 +125,7 @@ export default function TeamSwitcher({ className }: TeamSwitcherProps) {
                         <AvatarImage
                           src={`https://avatar.vercel.sh/${team.value}.png`}
                           alt={team.label}
-                          className="grayscale"
+                          // className="grayscale"
                         />
                         <AvatarFallback>SC</AvatarFallback>
                       </Avatar>
