@@ -79,10 +79,10 @@ export function TeamAccordion() {
                 src="https://media.licdn.com/dms/image/C4D03AQHniGzE57dr1Q/profile-displayphoto-shrink_400_400/0/1516967857467?e=1708560000&v=beta&t=heXIupFrSoMNsRjv4-q5pTv3e40SDQ9952yjpCkMOcc"
                 alt="Avatar"
               />
-              <AvatarFallback className="text-lg">JH</AvatarFallback>
+              <AvatarFallback className="text-lg">PW</AvatarFallback>
             </Avatar>
             <div className="ml-4 space-y-1 text-left">
-              <p className="text-sm font-medium leading-none">Jennifer Hsui</p>
+              <p className="text-sm font-medium leading-none">Paul Whitehead</p>
               <p className="text-sm text-muted-foreground">
                 Co-Head of Index Equity
               </p>
