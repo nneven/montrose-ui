@@ -234,7 +234,7 @@ export default function DashboardPage() {
                   </CardContent>
                 </Card>
               </div>
-              <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+              <div className="grid gap-4 md:grid-cols-1 lg:grid-cols-1">
                 <Card className="col-span-1">
                   <CardHeader className="-mb-4">
                     <CardTitle>Portfolio Managers</CardTitle>
@@ -242,6 +242,18 @@ export default function DashboardPage() {
                   <CardContent>
                     <TeamAccordion />
                   </CardContent>
+                </Card>
+              </div>
+              <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+                <Card className="col-span-1">
+                  <CardHeader>
+                    <CardTitle>Card Title</CardTitle>
+                    <CardDescription>Card Description</CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <p>Card Content</p>
+                  </CardContent>
+                  <CardFooter>{/* <p>Card Footer</p> */}</CardFooter>
                 </Card>
                 <Card className="col-span-2">
                   <CardHeader>
