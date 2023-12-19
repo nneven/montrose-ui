@@ -179,7 +179,7 @@ export default function DashboardPage() {
                   </CardContent>
                 </Card>
               </div> */}
-              <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+              <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 h-[440px]">
                 <Card>
                   <CardHeader>
                     {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -191,7 +191,7 @@ export default function DashboardPage() {
                   </CardHeader>
                   <CardContent>
                     <CardTitle className="font-bold text-lg">
-                      Robotics and AI Multisector ETF
+                      iShares Robotics and AI Multisector ETF
                     </CardTitle>
                     <div className="grid grid-cols-2 gap-4 text-sm mt-4 mb-2">
                       <div>
@@ -217,7 +217,7 @@ export default function DashboardPage() {
                       href="/blackrock-robotics-and-ai-etf"
                       className="w-full flex justify-center"
                     >
-                      <Button className="bg-green-600 w-1/2">Fund Info</Button>
+                      <Button className="bg-green-500 w-1/2">Fund Info</Button>
                     </Link>
                   </CardFooter>
                 </Card>
@@ -256,7 +256,7 @@ export default function DashboardPage() {
                     </div>
                   </CardContent>
                   <CardFooter className="flex justify-center w-full">
-                    <Button className="bg-green-600 w-1/2">Fund Info</Button>
+                    <Button className="bg-green-500 w-1/2">Fund Info</Button>
                   </CardFooter>
                 </Card>
                 <Card>
@@ -292,31 +292,117 @@ export default function DashboardPage() {
                     </div>
                   </CardContent>
                   <CardFooter className="flex justify-center w-full">
-                    <Button className="bg-green-600 w-1/2">Fund Info</Button>
+                    <Button className="bg-green-500 w-1/2">Fund Info</Button>
                   </CardFooter>
                 </Card>
               </div>
-              {/* <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-7">
-                <Card className="col-span-4">
+              <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 h-[440px]">
+                <Card>
                   <CardHeader>
-                    <CardTitle>Overview</CardTitle>
-                  </CardHeader>
-                  <CardContent className="pl-2">
-                    <Overview />
-                  </CardContent>
-                </Card>
-                <Card className="col-span-3">
-                  <CardHeader>
-                    <CardTitle>Recent Sales</CardTitle>
-                    <CardDescription>
-                      You made 265 sales this month.
-                    </CardDescription>
+                    <img
+                      src="https://www.blackstone.com/wp-content/uploads/sites/2/2020/07/Blackstone-PRESS-QUALITY-6312.png"
+                      alt="Blackstone Fund Banner"
+                      className="w-full py-4"
+                    />
                   </CardHeader>
                   <CardContent>
-                    <RecentSales />
+                    <CardTitle className="font-bold text-lg">
+                      Blackstone Private Equity Fund
+                    </CardTitle>
+                    <div className="grid grid-cols-2 gap-4 text-sm mt-4 mb-2">
+                      <div>
+                        <p className="font-semibold">Fund Type</p>
+                        <p>Private Equity</p>
+                      </div>
+                      <div>
+                        <p className="font-semibold">Assets Under Management</p>
+                        <p>$85 Billion</p>
+                      </div>
+                      <div>
+                        <p className="font-semibold">Risk Profile</p>
+                        <p>Moderate</p>
+                      </div>
+                      <div>
+                        <p className="font-semibold">YTD Performance</p>
+                        <p>+5.12%</p>
+                      </div>
+                    </div>
                   </CardContent>
+                  <CardFooter className="flex justify-center w-full">
+                    <Button className="bg-green-500 w-1/2">Fund Info</Button>
+                  </CardFooter>
                 </Card>
-              </div> */}
+                <Card>
+                  <CardHeader>
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Sequoia_Capital_logo.svg/2560px-Sequoia_Capital_logo.svg.png"
+                      alt="Sequoia Capital Banner"
+                      className="w-full py-[70px]"
+                    />
+                  </CardHeader>
+                  <CardContent>
+                    <CardTitle className="font-bold text-lg">
+                      Sequoia Capital Growth Fund
+                    </CardTitle>
+                    <div className="grid grid-cols-2 gap-4 text-sm mt-4 mb-2">
+                      <div>
+                        <p className="font-semibold">Fund Type</p>
+                        <p>Venture Capital</p>
+                      </div>
+                      <div>
+                        <p className="font-semibold">Assets Under Management</p>
+                        <p>$35 Billion</p>
+                      </div>
+                      <div>
+                        <p className="font-semibold">Risk Profile</p>
+                        <p>High</p>
+                      </div>
+                      <div>
+                        <p className="font-semibold">YTD Performance</p>
+                        <p>+8.91%</p>
+                      </div>
+                    </div>
+                  </CardContent>
+                  <CardFooter className="flex justify-center w-full">
+                    <Button className="bg-green-500 w-1/2">Fund Info</Button>
+                  </CardFooter>
+                </Card>
+                <Card>
+                  <CardHeader>
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Bridgewater_Associates.png/260px-Bridgewater_Associates.png"
+                      alt="Bridgewater Associates Banner"
+                      className="w-full"
+                    />
+                  </CardHeader>
+                  <CardContent>
+                    <CardTitle className="font-bold text-lg">
+                      Bridgewater Associates Fund
+                    </CardTitle>
+                    <div className="grid grid-cols-2 gap-4 text-sm mt-4 mb-2">
+                      <div>
+                        <p className="font-semibold">Fund Type</p>
+                        <p>Hedge Fund</p>
+                      </div>
+                      <div>
+                        <p className="font-semibold">Assets Under Management</p>
+                        <p>$140 Billion</p>
+                      </div>
+                      <div>
+                        <p className="font-semibold">Risk Profile</p>
+                        <p>Low</p>
+                      </div>
+                      <div>
+                        <p className="font-semibold">YTD Performance</p>
+                        <p>+3.51%</p>
+                      </div>
+                    </div>
+                  </CardContent>
+                  <CardFooter className="flex justify-center w-full">
+                    <Button className="bg-green-500 w-1/2">Fund Info</Button>
+                  </CardFooter>
+                </Card>
+              </div>
             </TabsContent>
           </Tabs>
         </div>
