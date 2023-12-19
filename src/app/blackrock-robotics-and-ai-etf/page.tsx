@@ -12,6 +12,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Separator } from "@/components/ui/separator";
 
 import { CalendarDateRangePicker } from "@/components/examples/date-range-picker";
 import { MainNav } from "@/components/examples/main-nav";
@@ -159,7 +160,7 @@ export default function DashboardPage() {
                   </CardHeader>
                   <CardContent>
                     <div className="text-2xl font-bold text-green-500">
-                      34.82%
+                      +34.82%
                     </div>
                     <p className="text-xs text-muted-foreground">
                       YTD (year to date)
@@ -218,7 +219,7 @@ export default function DashboardPage() {
                       value chain.
                     </p>
                   </CardContent>
-                  <CardHeader className="-mt-6">
+                  {/* <CardHeader className="-mt-6">
                     <CardTitle>Why IRBO?</CardTitle>
                   </CardHeader>
                   <CardContent>
@@ -234,7 +235,7 @@ export default function DashboardPage() {
                       3. Seek long-term growth with companies that can shape the
                       global economic future
                     </p>
-                  </CardContent>
+                  </CardContent> */}
                 </Card>
               </div>
               <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -278,6 +279,87 @@ export default function DashboardPage() {
               <div className="grid gap-4 md:grid-cols-1 lg:grid-cols-1">
                 <Card>
                   <CardHeader>
+                    <CardTitle>Key Facts</CardTitle>
+                    <CardDescription>
+                      <p className="text-xs text-muted-foreground">
+                        as of Dec 15, 2023
+                      </p>
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent className="grid gap-16 md:grid-cols-1 lg:grid-cols-2">
+                    <ul className="space-y-2">
+                      <li className="flex justify-between">
+                        <span>Net Assets of Fund</span>
+                        <span>$578,835,390</span>
+                      </li>
+                      <Separator />
+                      <li className="flex justify-between">
+                        <span>Exchange</span>
+                        <span>NYSE Arca</span>
+                      </li>
+                      <Separator />
+                      <li className="flex justify-between">
+                        <span>Benchmark Index</span>
+                        <span>
+                          NYSE FactSet Global Robotics and Artificial
+                          Intelligence Index
+                        </span>
+                      </li>
+                      <Separator />
+                      <li className="flex justify-between">
+                        <span>Shares Outstanding</span>
+                        <span>17,000,000</span>
+                      </li>
+                      <Separator />
+                      <li className="flex justify-between">
+                        <span>Premium/Discount</span>
+                        <span>0.18%</span>
+                      </li>
+                      <Separator />
+                      <li className="flex justify-between">
+                        <span>Daily Volume</span>
+                        <span>116,869.00</span>
+                      </li>
+                      <Separator />
+                    </ul>
+                    <ul className="space-y-2">
+                      <li className="flex justify-between">
+                        <span>Fund Launch Date</span>
+                        <span>Jun 26, 2018</span>
+                      </li>
+                      <Separator />
+                      <li className="flex justify-between">
+                        <span>Asset Class</span>
+                        <span>Equity</span>
+                      </li>
+                      <Separator />
+                      <li className="flex justify-between">
+                        <span>Bloomberg Index Ticker</span>
+                        <span>NYFSRAIN</span>
+                      </li>
+                      <Separator />
+                      <li className="flex justify-between">
+                        <span>Distribution Frequency</span>
+                        <span>Semi-Annual</span>
+                      </li>
+                      <Separator />
+                      <li className="flex justify-between">
+                        <span>CUSIP</span>
+                        <span>46435U556</span>
+                      </li>
+                      <Separator />
+                      <li className="flex justify-between">
+                        <span>30 Day Median Bid/Ask Spread</span>
+                        <span>0.12%</span>
+                      </li>
+                      <Separator />
+                    </ul>
+                  </CardContent>
+                </Card>
+              </div>
+              <div className="grid gap-4 md:grid-cols-1 lg:grid-cols-1">
+                <Card>
+                  <CardHeader>
                     <CardTitle>Historical NAV per Share</CardTitle>
                     <CardDescription>
                       <p className="text-xs text-muted-foreground">
@@ -293,15 +375,54 @@ export default function DashboardPage() {
               <div className="grid gap-4 md:grid-cols-1 lg:grid-cols-1">
                 <Card>
                   <CardHeader>
-                    <CardTitle>Card Title</CardTitle>
-                    <CardDescription>Card Description</CardDescription>
+                    <CardTitle>Portfolio Characteristics</CardTitle>
+                    <CardDescription>
+                      <p className="text-xs text-muted-foreground">
+                        as of Dec 15, 2023
+                      </p>
+                    </CardDescription>
                   </CardHeader>
-                  <CardContent>
-                    <p>Card Content</p>
+                  <CardContent className="grid gap-16 md:grid-cols-1 lg:grid-cols-2">
+                    <ul className="space-y-2">
+                      <li className="flex justify-between">
+                        <span>Number of Holdings</span>
+                        <span>111</span>
+                      </li>
+                      <Separator />
+                      <li className="flex justify-between">
+                        <span>30 Day SEC Yield</span>
+                        <span>0.38%</span>
+                      </li>
+                      <Separator />
+                      <li className="flex justify-between">
+                        <span>Standard Deviation (3y)</span>
+                        <span>25.33%</span>
+                      </li>
+                      <Separator />
+                      <li className="flex justify-between">
+                        <span>P/B Ratio</span>
+                        <span>2.23</span>
+                      </li>
+                      <Separator />
+                    </ul>
+                    <ul className="space-y-2">
+                      <li className="flex justify-between">
+                        <span>Equity Beta (3y)</span>
+                        <span>1.11</span>
+                      </li>
+                      <Separator />
+                      <li className="flex justify-between">
+                        <span>12m Trailing Yield</span>
+                        <span>0.64%</span>
+                      </li>
+                      <Separator />
+                      <li className="flex justify-between">
+                        <span>P/E Ratio</span>
+                        <span>24.05</span>
+                      </li>
+                      <Separator />
+                    </ul>
                   </CardContent>
-                  <CardFooter>
-                    <p>Card Footer</p>
-                  </CardFooter>
                 </Card>
               </div>
               <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -344,20 +465,6 @@ export default function DashboardPage() {
               <div className="grid gap-4 md:grid-cols-1 lg:grid-cols-1">
                 <Card>
                   <CardHeader>
-                    <CardTitle>Card Title</CardTitle>
-                    <CardDescription>Card Description</CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <p>Card Content</p>
-                  </CardContent>
-                  <CardFooter>
-                    <p>Card Footer</p>
-                  </CardFooter>
-                </Card>
-              </div>
-              <div className="grid gap-4 md:grid-cols-1 lg:grid-cols-1">
-                <Card>
-                  <CardHeader>
                     <CardTitle>Holdings</CardTitle>
                     <CardDescription>
                       <p className="text-xs text-muted-foreground">
@@ -367,6 +474,87 @@ export default function DashboardPage() {
                   </CardHeader>
                   <CardContent>
                     <DataTable />
+                  </CardContent>
+                </Card>
+              </div>
+              <div className="grid gap-4 md:grid-cols-1 lg:grid-cols-1">
+                <Card>
+                  <CardHeader>
+                    <CardTitle>Sustainability Characteristics</CardTitle>
+                    <CardDescription>
+                      <p className="text-xs text-muted-foreground">
+                        as of Oct 25, 2023. This fund does not seek to follow a
+                        sustainable, impact or ESG investment strategy. The
+                        metrics do not change the fund&apos;s investment
+                        objective or constrain the fund&apos;s investable
+                        universe, and there is no indication that a sustainable,
+                        impact or ESG investment strategy will be adopted by the
+                        fund. For more information regarding the fund&apos;s
+                        investment strategy, please see the fund&apos;s
+                        prospectus.
+                      </p>
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent className="grid gap-16 md:grid-cols-1 lg:grid-cols-2">
+                    <ul className="space-y-2">
+                      <li className="flex justify-between">
+                        <span>MSCI ESG Fund Rating (AAA-CCC)</span>
+                        <span>A</span>
+                      </li>
+                      <Separator />
+                      <li className="flex justify-between">
+                        <span>MSCI ESG Quality Score (0-10)</span>
+                        <span>5.8</span>
+                      </li>
+                      <Separator />
+                      <li className="flex justify-between">
+                        <span>Fund Lipper Global Classification</span>
+                        <span>Equity Sector Information Tech</span>
+                      </li>
+                      <Separator />
+                      <li className="flex justify-between">
+                        <span>
+                          MSCI Weighted Average Carbon Intensity (Tons CO2E/$M
+                          SALES)
+                        </span>
+                        <span>29.68</span>
+                      </li>
+                      <Separator />
+                      <li className="flex justify-between">
+                        <span>MSCI Implied Temperature Rise (0-3.0+ °C)</span>
+                        <span>&gt; 2.0° - 2.5° C</span>
+                      </li>
+                      <Separator />
+                    </ul>
+                    <ul className="space-y-2">
+                      <li className="flex justify-between">
+                        <span>MSCI ESG % Coverage</span>
+                        <span>93.29%</span>
+                      </li>
+                      <Separator />
+                      <li className="flex justify-between">
+                        <span>MSCI ESG Quality Score - Peer Percentile</span>
+                        <span>29.34%</span>
+                      </li>
+                      <Separator />
+                      <li className="flex justify-between">
+                        <span>Funds in Peer Group</span>
+                        <span>961</span>
+                      </li>
+                      <Separator />
+                      <li className="flex justify-between">
+                        <span>
+                          MSCI Weighted Average Carbon Intensity % Coverage
+                        </span>
+                        <span>96.07%</span>
+                      </li>
+                      <Separator />
+                      <li className="flex justify-between">
+                        <span>MSCI Implied Temperature Rise % Coverage</span>
+                        <span>96.07%</span>
+                      </li>
+                      <Separator />
+                    </ul>
                   </CardContent>
                 </Card>
               </div>
