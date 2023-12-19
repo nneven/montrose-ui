@@ -275,18 +275,8 @@ export default function DashboardPage() {
                   </CardContent>
                 </Card>
               </div>
-              <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-                {/* <Card className="col-span-1">
-                  <CardHeader>
-                    <CardTitle>Card Title</CardTitle>
-                    <CardDescription>Card Description</CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <p>Card Content</p>
-                  </CardContent>
-                  <CardFooter><p>Card Footer</p></CardFooter>
-                </Card> */}
-                <Card className="col-span-3">
+              <div className="grid gap-4 md:grid-cols-1 lg:grid-cols-1">
+                <Card>
                   <CardHeader>
                     <CardTitle>Historical NAV per Share</CardTitle>
                     <CardDescription>
@@ -298,6 +288,20 @@ export default function DashboardPage() {
                   <CardContent>
                     <SimpleLineChart />
                   </CardContent>
+                </Card>
+              </div>
+              <div className="grid gap-4 md:grid-cols-1 lg:grid-cols-1">
+                <Card>
+                  <CardHeader>
+                    <CardTitle>Card Title</CardTitle>
+                    <CardDescription>Card Description</CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <p>Card Content</p>
+                  </CardContent>
+                  <CardFooter>
+                    <p>Card Footer</p>
+                  </CardFooter>
                 </Card>
               </div>
               <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -340,6 +344,20 @@ export default function DashboardPage() {
               <div className="grid gap-4 md:grid-cols-1 lg:grid-cols-1">
                 <Card>
                   <CardHeader>
+                    <CardTitle>Card Title</CardTitle>
+                    <CardDescription>Card Description</CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <p>Card Content</p>
+                  </CardContent>
+                  <CardFooter>
+                    <p>Card Footer</p>
+                  </CardFooter>
+                </Card>
+              </div>
+              <div className="grid gap-4 md:grid-cols-1 lg:grid-cols-1">
+                <Card>
+                  <CardHeader>
                     <CardTitle>Holdings</CardTitle>
                     <CardDescription>
                       <p className="text-xs text-muted-foreground">
@@ -353,20 +371,7 @@ export default function DashboardPage() {
                 </Card>
               </div>
             </TabsContent>
-            <TabsContent value="analytics" className="space-y-4">
-              <Card>
-                <CardHeader>
-                  <CardTitle>Card Title</CardTitle>
-                  <CardDescription>Card Description</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p>Card Content</p>
-                </CardContent>
-                <CardFooter>
-                  <p>Card Footer</p>
-                </CardFooter>
-              </Card>
-            </TabsContent>
+            <TabsContent value="analytics" className="space-y-4"></TabsContent>
             <TabsContent value="reports" className="space-y-4">
               <Card className="h-[120vh]">
                 <CardHeader>
