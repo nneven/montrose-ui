@@ -9,6 +9,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+import { Button } from "@/components/ui/button";
 
 const sources = [
   {
@@ -114,7 +115,12 @@ export function SourceTable() {
   return (
     <Table>
       <TableCaption>
-        A list of data sources used to generate the dashboard and reports.
+        <div className="flex items-center">
+          A list of data sources used to generate the dashboard and reports.
+          <Button className="text-sm ml-auto bg-green-600 hover:bg-green-700">
+            Upload
+          </Button>
+        </div>
       </TableCaption>
       <TableHeader>
         <TableRow>
