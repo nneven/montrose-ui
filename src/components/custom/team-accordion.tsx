@@ -18,7 +18,10 @@ export function TeamAccordion() {
         <AccordionTrigger className="pb-4">
           <div className="flex items-center">
             <Avatar className="h-14 w-14">
-              <AvatarImage src="" alt="Avatar" />
+              <AvatarImage
+                src="https://www.blackrock.com/blk-one-c-assets/gls/images/portfolio-managers/hsuijen.jpg"
+                alt="Avatar"
+              />
               <AvatarFallback className="text-lg">JH</AvatarFallback>
             </Avatar>
             <div className="ml-4 space-y-1 text-left">

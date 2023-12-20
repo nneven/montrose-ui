@@ -365,7 +365,9 @@ export default function DashboardPage() {
               <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
                 <Card className="col-span-1">
                   <CardHeader>
-                    <CardTitle>Calendar Year by Year Returns</CardTitle>
+                    <CardTitle>
+                      Calendar Year by Year Returns vs. Benchmark
+                    </CardTitle>
                     <CardDescription>
                       <p className="text-xs text-muted-foreground">
                         as of Dec 15, 2023

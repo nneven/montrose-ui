@@ -15,73 +15,79 @@ const sources = [
     title: "iShares Robotics and AI Multisector ETF Homepage",
     date: "2023-12-14",
     format: "Web Page",
-    url: "https://example.com/ishares-homepage",
+    url: "https://www.blackrock.com/us/individual/products/297905/ishares-robotics-and-artificial-intelligence-multisector-etf",
   },
   {
     title: "Product Brief",
     date: "2023-09-01",
     format: "PDF",
-    url: "https://example.com/product-brief",
+    url: "https://www.blackrock.com/us/individual/literature/product-brief/ishares-robotics-and-artificial-intelligence-irbo-etf-product-brief-en-us.pdf",
   },
   {
     title: "Megatrends Product Brief",
     date: "2023-09-01",
     format: "PDF",
-    url: "https://example.com/megatrends-product-brief",
+    url: "https://www.blackrock.com/us/individual/literature/product-brief/megatrends-product-brief.pdf",
   },
   {
     title: "Fact Sheet",
     date: "2023-09-30",
     format: "PDF",
-    url: "https://example.com/fact-sheet",
+    url: "https://www.blackrock.com/us/individual/literature/fact-sheet/irbo-ishares-robotics-and-artificial-intelligence-multisector-etf-fund-fact-sheet-en-us.pdf",
   },
   {
     title: "Prospectus",
     date: "2023-12-01",
     format: "PDF",
-    url: "https://example.com/prospectus",
+    url: "https://www.blackrock.com/us/individual/literature/prospectus/p-ishares-robotics-and-artificial-intelligence-etf-7-31.pdf?stream=reg&product=IUS-IRBO&shareClass=NA&documentId=1568661%7E1568660%7E926300%7E1595236%7E1686316&iframeUrlOverride=%2Fus%2Findividual%2Fliterature%2Fprospectus%2Fp-ishares-robotics-and-artificial-intelligence-etf-7-31.pdf",
   },
   {
     title: "Summary Prospectus",
     date: "2023-12-01",
     format: "PDF",
-    url: "https://example.com/summary-prospectus",
+    url: "https://www.blackrock.com/us/individual/literature/summary-prospectus/sp-ishares-robotics-and-artificial-intelligence-etf-7-31.pdf?stream=reg&product=IUS-IRBO&shareClass=NA&documentId=1568661%7E1568660%7E926300%7E1595236%7E1686316&iframeUrlOverride=%2Fus%2Findividual%2Fliterature%2Fsummary-prospectus%2Fsp-ishares-robotics-and-artificial-intelligence-etf-7-31.pdf",
   },
   {
     title: "Statement of Additional Information",
     date: "2023-12-01",
     format: "PDF",
-    url: "https://example.com/statement-additional-info",
+    url: "https://www.blackrock.com/us/individual/literature/sai/sai-ishares-trust-7-31-eo.pdf?stream=reg&product=IUS-IRBO&shareClass=NA&documentId=1568661%7E1568660%7E926300%7E1595236%7E1686316%7E1871367%7E1871364&iframeUrlOverride=%2Fus%2Findividual%2Fliterature%2Fsai%2Fsai-ishares-trust-7-31-eo.pdf",
   },
   {
     title: "Annual Report",
     date: "2023-07-31",
     format: "PDF",
-    url: "https://example.com/annual-report",
+    url: "https://www.blackrock.com/us/individual/literature/annual-report/ar-ishares-exponential-technologies-etfs-07-31.pdf?stream=reg&product=IUS-IRBO&shareClass=NA&documentId=1568661%7E1568660%7E926300%7E1595236%7E1686316&iframeUrlOverride=%2Fus%2Findividual%2Fliterature%2Fannual-report%2Far-ishares-exponential-technologies-etfs-07-31.pdf",
   },
   {
     title: "Semi-Annual Report",
     date: "2023-01-31",
     format: "PDF",
-    url: "https://example.com/semi-annual-report",
+    url: "https://www.blackrock.com/us/individual/literature/semi-annual-report/sar-ishares-exponential-technologies-etfs-01-31.pdf?stream=reg&product=IUS-IRBO&shareClass=NA&documentId=1568661%7E1568660%7E926300%7E1595236%7E1686316&iframeUrlOverride=%2Fus%2Findividual%2Fliterature%2Fsemi-annual-report%2Fsar-ishares-exponential-technologies-etfs-01-31.pdf",
   },
   {
     title: "Holdings, Historical, Performance, Distributions",
     date: "2023-12-05",
     format: "Excel",
-    url: "https://example.com/holdings-historical-data",
+    url: "https://www.blackrock.com/us/individual/products/297905/fund/1515394931018.ajax?fileType=xls&fileName=iShares-Robotics-and-Artificial-Intelligence-Multisector-ETF_fund&dataType=fund",
   },
   {
     title: "Jennifer Hsui LinkedIn Profile",
     date: "2023-12-14",
     format: "LinkedIn",
-    url: "https://linkedin.com/in/jennifer-hsui",
+    url: "https://www.linkedin.com/in/jenniferhsui",
   },
   {
     title: "Greg Savage LinkedIn Profile",
     date: "2023-12-14",
     format: "LinkedIn",
-    url: "https://linkedin.com/in/greg-savage",
+    url: "https://www.linkedin.com/in/greg-savage-cfa-723337",
+  },
+  {
+    title: "Paul Whitehead LinkedIn Profile",
+    date: "2023-12-14",
+    format: "LinkedIn",
+    url: "https://www.linkedin.com/in/paul-whitehead-7ba26a22",
   },
 ];
 
@@ -95,9 +101,8 @@ export function SourceTable() {
         <TableRow>
           <TableHead>Format</TableHead>
           <TableHead>Date</TableHead>
-          <TableHead className="">Title</TableHead>
-
-          <TableHead className="text-right">URL</TableHead>
+          <TableHead>Title</TableHead>
+          <TableHead>URL</TableHead>
         </TableRow>
       </TableHeader>
       <TableBody>
@@ -155,7 +160,11 @@ export function SourceTable() {
             </TableCell>
             <TableCell>{source.date}</TableCell>
             <TableCell className="font-medium">{source.title}</TableCell>
-            <TableCell className="text-right">{source.url}</TableCell>
+            <TableCell className="truncate max-w-xs">
+              <a href={source.url} target="_blank">
+                {source.url}
+              </a>
+            </TableCell>
           </TableRow>
         ))}
       </TableBody>
