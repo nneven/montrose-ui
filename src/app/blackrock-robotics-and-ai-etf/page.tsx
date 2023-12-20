@@ -84,7 +84,7 @@ export default function DashboardPage() {
               <TabsTrigger value="overview">Overview</TabsTrigger>
               {/* <TabsTrigger value="analytics">Analytics</TabsTrigger> */}
               <TabsTrigger value="reports">Reports</TabsTrigger>
-              <TabsTrigger value="downloads">Data Lake</TabsTrigger>
+              <TabsTrigger value="downloads">Data Room</TabsTrigger>
             </TabsList>
             <TabsContent value="overview" className="space-y-4">
               <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
@@ -582,21 +582,21 @@ export default function DashboardPage() {
             </TabsContent>
             <TabsContent value="downloads" className="space-y-4">
               <Card>
-                <CardHeader>
+                {/* <CardHeader>
                   <CardTitle>Data Sources</CardTitle>
-                </CardHeader>
+                </CardHeader> */}
                 <CardContent>
                   <SourceTable />
                 </CardContent>
               </Card>
-              <Card>
+              {/* <Card>
                 <CardHeader>
                   <CardTitle>Data Sources</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <DataSources />
                 </CardContent>
-              </Card>
+              </Card> */}
             </TabsContent>
           </Tabs>
         </div>
