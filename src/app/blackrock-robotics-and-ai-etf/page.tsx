@@ -201,7 +201,7 @@ export default function DashboardPage() {
                     <CardTitle>Executive Summary</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p>
+                    <p className="text-sm">
                       The iShares Robotics and Artificial Intelligence
                       Multisector ETF (the “Fund”) seeks to track the investment
                       results of an index composed of developed and emerging
@@ -325,22 +325,25 @@ export default function DashboardPage() {
                     <CardTitle>Principal Investment Strategy</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    The iShares Robotics and Artificial Intelligence ETF (IRBO)
-                    tracks the NYSE® FactSet® Global Robotics and Artificial
-                    Intelligence Index. This index selects companies based on
-                    their involvement in 22 relevant robotics and AI
-                    sub-industries, with eligibility criteria including a
-                    minimum of 50% revenue generation or significant market
-                    share in these areas. The Index, reviewed annually and
-                    rebalanced semi-annually, includes firms from 19 countries,
-                    representing industries like communication services and
-                    information technology. Companies must meet a $500 million
-                    float-adjusted market cap and a $2 million three-month
-                    average daily trading value for inclusion. The Fund
-                    generally will invest at least 80% of its assets in the
-                    component securities of its Underlying Index and may invest
-                    up to 20% of its assets in certain futures, options and swap
-                    contracts, cash and cash equivalents.
+                    <p className="text-sm">
+                      The iShares Robotics and Artificial Intelligence ETF
+                      (IRBO) tracks the NYSE® FactSet® Global Robotics and
+                      Artificial Intelligence Index. This index selects
+                      companies based on their involvement in 22 relevant
+                      robotics and AI sub-industries, with eligibility criteria
+                      including a minimum of 50% revenue generation or
+                      significant market share in these areas. <br /> <br />
+                      The Index, reviewed annually and rebalanced semi-annually,
+                      includes firms from 19 countries, representing industries
+                      like communication services and information technology.
+                      Companies must meet a $500 million float-adjusted market
+                      cap and a $2 million three-month average daily trading
+                      value for inclusion. <br /> <br />
+                      The Fund generally will invest at least 80% of its assets
+                      in the component securities of its Underlying Index and
+                      may invest up to 20% of its assets in certain futures,
+                      options and swap contracts, cash and cash equivalents.
+                    </p>
                   </CardContent>
                 </Card>
                 <Card className="col-span-2">
