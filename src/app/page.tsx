@@ -195,16 +195,16 @@ export default function DashboardPage() {
                     </CardTitle>
                     <div className="grid grid-cols-2 gap-4 text-sm mt-4 mb-2">
                       <div>
-                        <p className="font-semibold">Ticker</p>
-                        <p>IRBO</p>
+                        <p className="font-semibold">Fund Type</p>
+                        <p>ETF</p>
                       </div>
                       <div>
-                        <p className="font-semibold">NAV</p>
-                        <p>$33.87</p>
+                        <p className="font-semibold">AUM</p>
+                        <p>$578 Million</p>
                       </div>
                       <div>
-                        <p className="font-semibold">Expense Ratio</p>
-                        <p>0.47%</p>
+                        <p className="font-semibold">Risk Profile</p>
+                        <p>Medium</p>
                       </div>
                       <div>
                         <p className="font-semibold">YTD Return</p>
@@ -227,31 +227,29 @@ export default function DashboardPage() {
                     <img
                       src="https://static.otta.com/uploads/images/company-logos/290-gVcazm4lefgPE2S5FbaxxMiWQzXBpqRnfnF3Go6nALU.png"
                       alt="Entrepreneur First Banner"
-                      className="w-full py-8"
+                      className="w-full py-[26px]"
                     />
                   </CardHeader>
                   <CardContent>
                     <CardTitle className="font-bold text-lg mt-2">
-                      Entrepreneur First
+                      Entrepreneur First US Fund I
                     </CardTitle>
                     <div className="grid grid-cols-2 gap-4 text-sm mt-4 mb-2">
                       <div>
-                        <p className="font-semibold">Investment Focus</p>
-                        <p>Tech Startups</p>
+                        <p className="font-semibold">Fund Type</p>
+                        <p>Venture Capital</p>
                       </div>
                       <div>
-                        <p className="font-semibold">
-                          Collective Startup Value
-                        </p>
-                        <p>Over $10B</p>
+                        <p className="font-semibold">AUM</p>
+                        <p>$10 Billion</p>
                       </div>
                       <div>
-                        <p className="font-semibold">Notable Backers</p>
-                        <p>Reid Hoffman, Vitruvian</p>
+                        <p className="font-semibold">Risk Profile</p>
+                        <p>High</p>
                       </div>
                       <div>
-                        <p className="font-semibold">Global Reach</p>
-                        <p>New York, London, and Paris</p>
+                        <p className="font-semibold">YTD Performance</p>
+                        <p>+14.2%</p>
                       </div>
                     </div>
                   </CardContent>
@@ -265,7 +263,7 @@ export default function DashboardPage() {
                     <img
                       src="https://ir.alti-global.com/sites/g/files/knoqqb87741/themes/site/dist/images/alvalogo.png"
                       alt="Alti Global Banner"
-                      className="w-full py-8"
+                      className="w-full py-6"
                     />
                   </CardHeader>
                   <CardContent>
@@ -274,20 +272,20 @@ export default function DashboardPage() {
                     </CardTitle>
                     <div className="grid grid-cols-2 gap-4 text-sm my-4">
                       <div>
-                        <p className="font-semibold">Strategy</p>
-                        <p>Diversified Multi-Strategy</p>
-                      </div>
-                      <div>
                         <p className="font-semibold">Fund Type</p>
-                        <p>Fund of Funds</p>
+                        <p>Asset Management</p>
                       </div>
                       <div>
-                        <p className="font-semibold">Assets Under Management</p>
-                        <p>$69B</p>
+                        <p className="font-semibold">AUM</p>
+                        <p>$69 Billion</p>
                       </div>
                       <div>
-                        <p className="font-semibold">Investor Qualification</p>
-                        <p>Accredited Investors</p>
+                        <p className="font-semibold">Risk Profile</p>
+                        <p>Low</p>
+                      </div>
+                      <div>
+                        <p className="font-semibold">YTD Performance</p>
+                        <p>+12.34%</p>
                       </div>
                     </div>
                   </CardContent>
@@ -305,7 +303,7 @@ export default function DashboardPage() {
                   </CardHeader>
                   <CardContent>
                     <CardTitle className="font-bold text-lg">
-                      Blackstone Private Equity Fund
+                      Blackstone Private Equity Fund III
                     </CardTitle>
                     <div className="grid grid-cols-2 gap-4 text-sm mt-4 mb-2">
                       <div>
@@ -313,7 +311,7 @@ export default function DashboardPage() {
                         <p>Private Equity</p>
                       </div>
                       <div>
-                        <p className="font-semibold">Assets Under Management</p>
+                        <p className="font-semibold">AUM</p>
                         <p>$85 Billion</p>
                       </div>
                       <div>
@@ -335,7 +333,7 @@ export default function DashboardPage() {
                     <img
                       src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Sequoia_Capital_logo.svg/2560px-Sequoia_Capital_logo.svg.png"
                       alt="Sequoia Capital Banner"
-                      className="w-full py-[70px]"
+                      className="w-full py-14"
                     />
                   </CardHeader>
                   <CardContent>
@@ -348,7 +346,7 @@ export default function DashboardPage() {
                         <p>Venture Capital</p>
                       </div>
                       <div>
-                        <p className="font-semibold">Assets Under Management</p>
+                        <p className="font-semibold">AUM</p>
                         <p>$35 Billion</p>
                       </div>
                       <div>
@@ -375,7 +373,7 @@ export default function DashboardPage() {
                   </CardHeader>
                   <CardContent>
                     <CardTitle className="font-bold text-lg">
-                      Bridgewater Associates Fund
+                      Bridgewater Associates Fund II
                     </CardTitle>
                     <div className="grid grid-cols-2 gap-4 text-sm mt-4 mb-2">
                       <div>
@@ -383,7 +381,7 @@ export default function DashboardPage() {
                         <p>Hedge Fund</p>
                       </div>
                       <div>
-                        <p className="font-semibold">Assets Under Management</p>
+                        <p className="font-semibold">AUM</p>
                         <p>$140 Billion</p>
                       </div>
                       <div>
