@@ -22,6 +22,7 @@ import { UserNav } from "@/components/examples/user-nav";
 
 import { DataTable } from "@/components/custom/holdings-table";
 import { DataSources } from "@/components/custom/data-sources";
+import { PanBarChart } from "@/components/custom/pan-bar-chart";
 import { SimpleLineChart } from "@/components/custom/line-chart";
 import { SimpleBarChart } from "@/components/custom/bar-chart";
 import { SimplePieChart } from "@/components/custom/pie-chart";
@@ -321,6 +322,19 @@ export default function DashboardPage() {
                 </Card>
               </div>
               <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+                <Card className="col-span-2">
+                  <CardHeader className="-mb-4">
+                    <CardTitle>Portfolio Managers</CardTitle>
+                    <CardDescription>
+                      Primarily responsible for the day-to-day management of the
+                      Fund. Each Portfolio Manager supervises a portfolio
+                      management team.
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <TeamAccordion />
+                  </CardContent>
+                </Card>
                 <Card className="col-span-1">
                   <CardHeader>
                     <CardTitle>Principal Investment Strategy</CardTitle>
@@ -347,22 +361,22 @@ export default function DashboardPage() {
                     </p>
                   </CardContent>
                 </Card>
-                <Card className="col-span-2">
-                  <CardHeader className="-mb-4">
-                    <CardTitle>Portfolio Managers</CardTitle>
+              </div>
+              <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+                <Card className="col-span-1">
+                  <CardHeader>
+                    <CardTitle>Calendar Year by Year Returns</CardTitle>
                     <CardDescription>
-                      Primarily responsible for the day-to-day management of the
-                      Fund. Each Portfolio Manager supervises a portfolio
-                      management team.
+                      <p className="text-xs text-muted-foreground">
+                        as of Dec 15, 2023
+                      </p>
                     </CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <TeamAccordion />
+                    <PanBarChart />
                   </CardContent>
                 </Card>
-              </div>
-              <div className="grid gap-4 md:grid-cols-1 lg:grid-cols-1">
-                <Card>
+                <Card className="col-span-2">
                   <CardHeader>
                     <CardTitle>Historical NAV per Share</CardTitle>
                     <CardDescription>

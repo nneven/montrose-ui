@@ -5504,7 +5504,7 @@ const data = [
 
 export function SimpleLineChart() {
   return (
-    <ResponsiveContainer width="100%" height={280}>
+    <ResponsiveContainer width="100%" height={303}>
       <LineChart data={data}>
         <CartesianGrid strokeDasharray="3 3" />
         <XAxis
