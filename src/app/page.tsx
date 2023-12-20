@@ -295,8 +295,6 @@ export default function DashboardPage() {
                     <Button className="bg-green-500 w-1/2">Fund Info</Button>
                   </CardFooter>
                 </Card>
-              </div>
-              <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 h-[440px]">
                 <Card>
                   <CardHeader>
                     <img
