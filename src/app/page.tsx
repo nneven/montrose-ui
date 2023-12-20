@@ -112,7 +112,9 @@ export default function DashboardPage() {
                       href="/blackrock-robotics-and-ai-etf"
                       className="w-full flex justify-center"
                     >
-                      <Button className="bg-green-500 w-1/2">Fund Info</Button>
+                      <Button className="bg-green-600 hover:bg-green-700 w-1/2">
+                        Fund Info
+                      </Button>
                     </Link>
                   </CardFooter>
                 </Card>
@@ -149,7 +151,9 @@ export default function DashboardPage() {
                     </div>
                   </CardContent>
                   <CardFooter className="flex justify-center w-full">
-                    <Button className="bg-green-500 w-1/2">Fund Info</Button>
+                    <Button className="bg-green-600 hover:bg-green-700 w-1/2">
+                      Fund Info
+                    </Button>
                   </CardFooter>
                 </Card>
                 <Card>
@@ -163,7 +167,7 @@ export default function DashboardPage() {
                   </CardHeader>
                   <CardContent>
                     <CardTitle className="font-bold text-lg">
-                      AlTi Global
+                      AlTi Global Fund VII
                     </CardTitle>
                     <div className="grid grid-cols-2 gap-4 text-sm my-4">
                       <div>
@@ -185,7 +189,9 @@ export default function DashboardPage() {
                     </div>
                   </CardContent>
                   <CardFooter className="flex justify-center w-full">
-                    <Button className="bg-green-500 w-1/2">Fund Info</Button>
+                    <Button className="bg-green-600 hover:bg-green-700 w-1/2">
+                      Fund Info
+                    </Button>
                   </CardFooter>
                 </Card>
                 <Card>
@@ -198,7 +204,7 @@ export default function DashboardPage() {
                   </CardHeader>
                   <CardContent>
                     <CardTitle className="font-bold text-lg">
-                      Blackstone Private Equity Fund III
+                      Blackstone Alternative Multi-Strategy I
                     </CardTitle>
                     <div className="grid grid-cols-2 gap-4 text-sm mt-4 mb-2">
                       <div>
@@ -220,7 +226,9 @@ export default function DashboardPage() {
                     </div>
                   </CardContent>
                   <CardFooter className="flex justify-center w-full">
-                    <Button className="bg-green-500 w-1/2">Fund Info</Button>
+                    <Button className="bg-green-600 hover:bg-green-700 w-1/2">
+                      Fund Info
+                    </Button>
                   </CardFooter>
                 </Card>
                 <Card>
@@ -233,7 +241,7 @@ export default function DashboardPage() {
                   </CardHeader>
                   <CardContent>
                     <CardTitle className="font-bold text-lg">
-                      Sequoia Capital Growth Fund
+                      Sequoia Capital Fund VI
                     </CardTitle>
                     <div className="grid grid-cols-2 gap-4 text-sm mt-4 mb-2">
                       <div>
@@ -255,7 +263,9 @@ export default function DashboardPage() {
                     </div>
                   </CardContent>
                   <CardFooter className="flex justify-center w-full">
-                    <Button className="bg-green-500 w-1/2">Fund Info</Button>
+                    <Button className="bg-green-600 hover:bg-green-700 w-1/2">
+                      Fund Info
+                    </Button>
                   </CardFooter>
                 </Card>
                 <Card>
@@ -268,7 +278,7 @@ export default function DashboardPage() {
                   </CardHeader>
                   <CardContent>
                     <CardTitle className="font-bold text-lg">
-                      Bridgewater Associates Fund II
+                      Bridgewater All Weather Fund
                     </CardTitle>
                     <div className="grid grid-cols-2 gap-4 text-sm mt-4 mb-2">
                       <div>
@@ -290,7 +300,9 @@ export default function DashboardPage() {
                     </div>
                   </CardContent>
                   <CardFooter className="flex justify-center w-full">
-                    <Button className="bg-green-500 w-1/2">Fund Info</Button>
+                    <Button className="bg-green-600 hover:bg-green-700 w-1/2">
+                      Fund Info
+                    </Button>
                   </CardFooter>
                 </Card>
               </div>
