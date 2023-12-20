@@ -133,7 +133,7 @@ export default function DashboardPage() {
                     </svg>
                   </CardHeader>
                   <CardContent>
-                    <div className="text-2xl font-bold text-red-500">
+                    <div className="text-2xl font-bold text-red-600">
                       -0.12 (-0.36%)
                     </div>
                     <p className="text-xs text-muted-foreground">
@@ -161,7 +161,7 @@ export default function DashboardPage() {
                     </svg>
                   </CardHeader>
                   <CardContent>
-                    <div className="text-2xl font-bold text-green-500">
+                    <div className="text-2xl font-bold text-green-600">
                       +34.82%
                     </div>
                     <p className="text-xs text-muted-foreground">
