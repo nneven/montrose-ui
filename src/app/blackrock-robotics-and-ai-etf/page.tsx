@@ -238,44 +238,6 @@ export default function DashboardPage() {
                   </CardContent> */}
                 </Card>
               </div>
-              <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-                <Card className="col-span-1">
-                  <CardHeader>
-                    <CardTitle>Principal Investment Strategy</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    The iShares Robotics and Artificial Intelligence ETF (IRBO)
-                    tracks the NYSE® FactSet® Global Robotics and Artificial
-                    Intelligence Index. This index selects companies based on
-                    their involvement in 22 relevant robotics and AI
-                    sub-industries, with eligibility criteria including a
-                    minimum of 50% revenue generation or significant market
-                    share in these areas. The Index, reviewed annually and
-                    rebalanced semi-annually, includes firms from 19 countries,
-                    representing industries like communication services and
-                    information technology. Companies must meet a $500 million
-                    float-adjusted market cap and a $2 million three-month
-                    average daily trading value for inclusion. The Fund
-                    generally will invest at least 80% of its assets in the
-                    component securities of its Underlying Index and may invest
-                    up to 20% of its assets in certain futures, options and swap
-                    contracts, cash and cash equivalents.
-                  </CardContent>
-                </Card>
-                <Card className="col-span-2">
-                  <CardHeader className="-mb-4">
-                    <CardTitle>Portfolio Managers</CardTitle>
-                    <CardDescription>
-                      Primarily responsible for the day-to-day management of the
-                      Fund. Each Portfolio Manager supervises a portfolio
-                      management team.
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <TeamAccordion />
-                  </CardContent>
-                </Card>
-              </div>
               <div className="grid gap-4 md:grid-cols-1 lg:grid-cols-1">
                 <Card>
                   <CardHeader>
@@ -354,6 +316,44 @@ export default function DashboardPage() {
                       </li>
                       <Separator />
                     </ul>
+                  </CardContent>
+                </Card>
+              </div>
+              <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+                <Card className="col-span-1">
+                  <CardHeader>
+                    <CardTitle>Principal Investment Strategy</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    The iShares Robotics and Artificial Intelligence ETF (IRBO)
+                    tracks the NYSE® FactSet® Global Robotics and Artificial
+                    Intelligence Index. This index selects companies based on
+                    their involvement in 22 relevant robotics and AI
+                    sub-industries, with eligibility criteria including a
+                    minimum of 50% revenue generation or significant market
+                    share in these areas. The Index, reviewed annually and
+                    rebalanced semi-annually, includes firms from 19 countries,
+                    representing industries like communication services and
+                    information technology. Companies must meet a $500 million
+                    float-adjusted market cap and a $2 million three-month
+                    average daily trading value for inclusion. The Fund
+                    generally will invest at least 80% of its assets in the
+                    component securities of its Underlying Index and may invest
+                    up to 20% of its assets in certain futures, options and swap
+                    contracts, cash and cash equivalents.
+                  </CardContent>
+                </Card>
+                <Card className="col-span-2">
+                  <CardHeader className="-mb-4">
+                    <CardTitle>Portfolio Managers</CardTitle>
+                    <CardDescription>
+                      Primarily responsible for the day-to-day management of the
+                      Fund. Each Portfolio Manager supervises a portfolio
+                      management team.
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <TeamAccordion />
                   </CardContent>
                 </Card>
               </div>
