@@ -25,6 +25,7 @@ import { DataSources } from "@/components/custom/data-sources";
 import { SimpleLineChart } from "@/components/custom/line-chart";
 import { SimpleBarChart } from "@/components/custom/bar-chart";
 import { SimplePieChart } from "@/components/custom/pie-chart";
+import { SourceTable } from "@/components/custom/sources-table";
 import { TeamAccordion } from "@/components/custom/team-accordion";
 
 export const metadata: Metadata = {
@@ -262,7 +263,7 @@ export default function DashboardPage() {
                       <Separator />
                       <li className="flex justify-between">
                         <span>Benchmark Index</span>
-                        <span>
+                        <span className="text-right w-1/2">
                           NYSE FactSet Global Robotics and Artificial
                           Intelligence Index
                         </span>
@@ -566,7 +567,10 @@ export default function DashboardPage() {
             <TabsContent value="reports" className="space-y-4">
               <Card className="h-[120vh]">
                 <CardHeader>
-                  <CardTitle>December 12, 2023</CardTitle>
+                  <CardTitle className="flex flex-row items-center justify-between">
+                    <span>December 12, 2023</span>
+                    {/* <Button>Download</Button> */}
+                  </CardTitle>
                 </CardHeader>
                 <CardContent className="h-[calc(100%-4rem)]">
                   <iframe
@@ -577,6 +581,14 @@ export default function DashboardPage() {
               </Card>
             </TabsContent>
             <TabsContent value="downloads" className="space-y-4">
+              <Card>
+                <CardHeader>
+                  <CardTitle>Data Sources</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <SourceTable />
+                </CardContent>
+              </Card>
               <Card>
                 <CardHeader>
                   <CardTitle>Data Sources</CardTitle>
