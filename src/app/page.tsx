@@ -74,119 +74,14 @@ export default function DashboardPage() {
               <TabsTrigger value="notifications">Notifications</TabsTrigger>
             </TabsList> */}
             <TabsContent value="overview" className="space-y-4">
-              {/* <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+              <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
                 <Card>
-                  <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                    <CardTitle className="text-sm font-medium">
-                      Portfolio Value
-                    </CardTitle>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      className="h-4 w-4 text-muted-foreground"
-                    >
-                      <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                    </svg>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="text-2xl font-bold">$64.9B</div>
-                    <p className="text-xs text-muted-foreground">
-                      +5.4% YTD (Year-to-Date)
-                    </p>
-                  </CardContent>
-                </Card>
-                <Card>
-                  <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                    <CardTitle className="text-sm font-medium">
-                      Annual Return
-                    </CardTitle>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      className="h-4 w-4 text-muted-foreground"
-                    >
-                      <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-                    </svg>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="text-2xl font-bold">+18.7%</div>
-                    <p className="text-xs text-muted-foreground">
-                      Compared to 10% market average
-                    </p>
-                  </CardContent>
-                </Card>
-                <Card>
-                  <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                    <CardTitle className="text-sm font-medium">
-                      Risk Exposure
-                    </CardTitle>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      className="h-4 w-4 text-muted-foreground"
-                    >
-                      <rect width="20" height="14" x="2" y="5" rx="2" />
-                      <path d="M2 10h20" />
-                    </svg>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="text-2xl font-bold">Moderate</div>
-                    <p className="text-xs text-muted-foreground">
-                      Balanced risk profile
-                    </p>
-                  </CardContent>
-                </Card>
-                <Card>
-                  <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                    <CardTitle className="text-sm font-medium">
-                      Top Performing Asset
-                    </CardTitle>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      className="h-4 w-4 text-muted-foreground"
-                    >
-                      <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
-                      <circle cx="9" cy="7" r="4" />
-                      <path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
-                    </svg>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="text-2xl font-bold">Entrepreneur First</div>
-                    <p className="text-xs text-muted-foreground">
-                      +34.2% growth this quarter
-                    </p>
-                  </CardContent>
-                </Card>
-              </div> */}
-              <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 h-[440px]">
-                <Card>
-                  <CardHeader>
+                  <CardHeader className="flex justify-center items-center h-48">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src="https://www.blackrockbkcc.com/sites/g/files/knoqqb54001/themes/site/nir_pid76/dist/images/resizelogo.png"
                       alt="Fund Banner"
-                      className="w-full"
+                      className="h-full object-contain"
                     />
                   </CardHeader>
                   <CardContent>
@@ -222,16 +117,16 @@ export default function DashboardPage() {
                   </CardFooter>
                 </Card>
                 <Card>
-                  <CardHeader>
+                  <CardHeader className="flex justify-center items-center h-48">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src="https://static.otta.com/uploads/images/company-logos/290-gVcazm4lefgPE2S5FbaxxMiWQzXBpqRnfnF3Go6nALU.png"
                       alt="Entrepreneur First Banner"
-                      className="w-full py-[26px]"
+                      className="h-full object-contain"
                     />
                   </CardHeader>
                   <CardContent>
-                    <CardTitle className="font-bold text-lg mt-2">
+                    <CardTitle className="font-bold text-lg">
                       Entrepreneur First US Fund I
                     </CardTitle>
                     <div className="grid grid-cols-2 gap-4 text-sm mt-4 mb-2">
@@ -258,16 +153,16 @@ export default function DashboardPage() {
                   </CardFooter>
                 </Card>
                 <Card>
-                  <CardHeader>
+                  <CardHeader className="flex justify-center items-center h-48">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src="https://ir.alti-global.com/sites/g/files/knoqqb87741/themes/site/dist/images/alvalogo.png"
                       alt="Alti Global Banner"
-                      className="w-full py-6"
+                      className="h-full object-contain"
                     />
                   </CardHeader>
                   <CardContent>
-                    <CardTitle className="font-bold text-lg mt-2">
+                    <CardTitle className="font-bold text-lg">
                       AlTi Global
                     </CardTitle>
                     <div className="grid grid-cols-2 gap-4 text-sm my-4">
@@ -294,11 +189,11 @@ export default function DashboardPage() {
                   </CardFooter>
                 </Card>
                 <Card>
-                  <CardHeader>
+                  <CardHeader className="flex justify-center items-center h-48">
                     <img
                       src="https://www.blackstone.com/wp-content/uploads/sites/2/2020/07/Blackstone-PRESS-QUALITY-6312.png"
                       alt="Blackstone Fund Banner"
-                      className="w-full py-4"
+                      className="h-full object-contain"
                     />
                   </CardHeader>
                   <CardContent>
@@ -329,11 +224,11 @@ export default function DashboardPage() {
                   </CardFooter>
                 </Card>
                 <Card>
-                  <CardHeader>
+                  <CardHeader className="flex justify-center items-center h-48">
                     <img
                       src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Sequoia_Capital_logo.svg/2560px-Sequoia_Capital_logo.svg.png"
                       alt="Sequoia Capital Banner"
-                      className="w-full py-14"
+                      className="h-full object-contain"
                     />
                   </CardHeader>
                   <CardContent>
@@ -364,11 +259,11 @@ export default function DashboardPage() {
                   </CardFooter>
                 </Card>
                 <Card>
-                  <CardHeader>
+                  <CardHeader className="flex justify-center items-center h-48">
                     <img
                       src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Bridgewater_Associates.png/260px-Bridgewater_Associates.png"
                       alt="Bridgewater Associates Banner"
-                      className="w-full"
+                      className="h-full object-contain"
                     />
                   </CardHeader>
                   <CardContent>
