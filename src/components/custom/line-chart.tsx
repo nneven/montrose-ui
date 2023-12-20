@@ -5505,7 +5505,12 @@ const data = [
 export function SimpleLineChart() {
   return (
     <ResponsiveContainer width="100%" height={303}>
-      <LineChart data={data}>
+      <LineChart
+        data={data}
+        margin={{
+          left: -20,
+        }}
+      >
         <CartesianGrid strokeDasharray="3 3" />
         <XAxis
           dataKey="date"
