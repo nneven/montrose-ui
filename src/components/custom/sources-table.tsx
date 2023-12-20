@@ -89,6 +89,25 @@ const sources = [
     format: "LinkedIn",
     url: "https://www.linkedin.com/in/paul-whitehead-7ba26a22",
   },
+  {
+    title: "AI-focused ETFs spread risk as fears grow of bubble.",
+    date: "2023-10-25",
+    format: "News Article",
+    url: "https://www.ft.com/content/02053c2f-613d-49de-a2a8-2400d53b1c20",
+  },
+  {
+    title:
+      "AI and Other “Mega-Forces” Are Reshaping Markets. How to Play them with ETFs.",
+    date: "2023-07-29",
+    format: "News Article",
+    url: "https://www.barrons.com/articles/ai-mega-forces-blackrock-etfs-670dc368",
+  },
+  {
+    title: "BlackRock PitchBook",
+    date: "2023-12-14",
+    format: "PitchBook",
+    url: "https://my.pitchbook.com/profile/10768-06",
+  },
 ];
 
 export function SourceTable() {
@@ -150,6 +169,30 @@ export function SourceTable() {
                   <Avatar className="h-6 w-6">
                     <AvatarImage
                       src="https://upload.wikimedia.org/wikipedia/commons/f/f8/LinkedIn_icon_circle.svg"
+                      alt="Avatar"
+                    />
+                    <AvatarFallback>{source.format}</AvatarFallback>
+                  </Avatar>
+                  <span className="ml-2">{source.format}</span>
+                </div>
+              )}
+              {source.format === "News Article" && (
+                <div className="flex items-center space-between">
+                  <Avatar className="h-6 w-6">
+                    <AvatarImage
+                      src="https://cdn.pixabay.com/photo/2017/06/10/07/22/news-2389226_960_720.png"
+                      alt="Avatar"
+                    />
+                    <AvatarFallback>{source.format}</AvatarFallback>
+                  </Avatar>
+                  <span className="ml-2">{source.format}</span>
+                </div>
+              )}
+              {source.format === "PitchBook" && (
+                <div className="flex items-center space-between">
+                  <Avatar className="h-6 w-6">
+                    <AvatarImage
+                      src="https://pbs.twimg.com/profile_images/1590838725537562624/tWHfcC8b_400x400.jpg"
                       alt="Avatar"
                     />
                     <AvatarFallback>{source.format}</AvatarFallback>

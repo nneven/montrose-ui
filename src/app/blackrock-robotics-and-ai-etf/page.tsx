@@ -221,33 +221,14 @@ export default function DashboardPage() {
                       value chain.
                     </p>
                   </CardContent>
-                  {/* <CardHeader className="-mt-6">
-                    <CardTitle>Why IRBO?</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p>
-                      1. Exposure to companies at the forefront of robotics and
-                      artificial intelligence innovation
-                    </p>
-                    <p>
-                      2. Exposure to an equal-weighted index composed of global
-                      companies across the robotics and AI value chain
-                    </p>
-                    <p>
-                      3. Seek long-term growth with companies that can shape the
-                      global economic future
-                    </p>
-                  </CardContent> */}
                 </Card>
               </div>
               <div className="grid gap-4 md:grid-cols-1 lg:grid-cols-1">
                 <Card>
                   <CardHeader>
                     <CardTitle>Key Facts</CardTitle>
-                    <CardDescription>
-                      <p className="text-xs text-muted-foreground">
-                        as of Dec 15, 2023
-                      </p>
+                    <CardDescription className="text-xs text-muted-foreground">
+                      as of Dec 15, 2023
                     </CardDescription>
                   </CardHeader>
                   <CardContent className="grid gap-16 md:grid-cols-1 lg:grid-cols-2">
@@ -368,10 +349,8 @@ export default function DashboardPage() {
                     <CardTitle>
                       Calendar Year by Year Returns vs. Benchmark
                     </CardTitle>
-                    <CardDescription>
-                      <p className="text-xs text-muted-foreground">
-                        as of Dec 15, 2023
-                      </p>
+                    <CardDescription className="text-xs text-muted-foreground">
+                      as of Dec 15, 2023
                     </CardDescription>
                   </CardHeader>
                   <CardContent>
@@ -381,10 +360,8 @@ export default function DashboardPage() {
                 <Card className="col-span-2">
                   <CardHeader>
                     <CardTitle>Historical NAV per Share</CardTitle>
-                    <CardDescription>
-                      <p className="text-xs text-muted-foreground">
-                        as of Dec 15, 2023
-                      </p>
+                    <CardDescription className="text-xs text-muted-foreground">
+                      as of Dec 15, 2023
                     </CardDescription>
                   </CardHeader>
                   <CardContent>
@@ -396,10 +373,8 @@ export default function DashboardPage() {
                 <Card>
                   <CardHeader>
                     <CardTitle>Portfolio Characteristics</CardTitle>
-                    <CardDescription>
-                      <p className="text-xs text-muted-foreground">
-                        as of Dec 15, 2023
-                      </p>
+                    <CardDescription className="text-xs text-muted-foreground">
+                      as of Dec 15, 2023
                     </CardDescription>
                   </CardHeader>
                   <CardContent className="grid gap-16 md:grid-cols-1 lg:grid-cols-2">
@@ -449,10 +424,8 @@ export default function DashboardPage() {
                 <Card className="col-span-2">
                   <CardHeader>
                     <CardTitle>Sector Exposure</CardTitle>
-                    <CardDescription>
-                      <p className="text-xs text-muted-foreground">
-                        as of Dec 15, 2023
-                      </p>
+                    <CardDescription className="text-xs text-muted-foreground">
+                      as of Dec 15, 2023
                     </CardDescription>
                   </CardHeader>
                   <CardContent>
@@ -462,23 +435,18 @@ export default function DashboardPage() {
                 <Card className="col-span-1">
                   <CardHeader>
                     <CardTitle>Geographic Exposure</CardTitle>
-                    <CardDescription>
-                      <p className="text-xs text-muted-foreground">
-                        as of Dec 15, 2023
-                      </p>
+                    <CardDescription className="text-xs text-muted-foreground">
+                      as of Dec 15, 2023
                     </CardDescription>
                   </CardHeader>
                   <CardContent>
                     <SimplePieChart />
                   </CardContent>
-                  <CardFooter>
-                    <p className="text-xs text-muted-foreground">
-                      Geographic exposure relates principally to the domicile of
-                      the issuers of the securities held in the product, added
-                      together and then expressed as a percentage of the
-                      product&apos;s total holdings, excluding currency
-                      holdings.
-                    </p>
+                  <CardFooter className="text-xs text-muted-foreground">
+                    Geographic exposure relates principally to the domicile of
+                    the issuers of the securities held in the product, added
+                    together and then expressed as a percentage of the
+                    product&apos;s total holdings, excluding currency holdings.
                   </CardFooter>
                 </Card>
               </div>
@@ -486,10 +454,8 @@ export default function DashboardPage() {
                 <Card>
                   <CardHeader>
                     <CardTitle>Holdings</CardTitle>
-                    <CardDescription>
-                      <p className="text-xs text-muted-foreground">
-                        as of Dec 15, 2023
-                      </p>
+                    <CardDescription className="text-xs text-muted-foreground">
+                      as of Dec 15, 2023
                     </CardDescription>
                   </CardHeader>
                   <CardContent>
@@ -501,18 +467,15 @@ export default function DashboardPage() {
                 <Card>
                   <CardHeader>
                     <CardTitle>Sustainability Characteristics</CardTitle>
-                    <CardDescription>
-                      <p className="text-xs text-muted-foreground">
-                        as of Oct 25, 2023. This fund does not seek to follow a
-                        sustainable, impact or ESG investment strategy. The
-                        metrics do not change the fund&apos;s investment
-                        objective or constrain the fund&apos;s investable
-                        universe, and there is no indication that a sustainable,
-                        impact or ESG investment strategy will be adopted by the
-                        fund. For more information regarding the fund&apos;s
-                        investment strategy, please see the fund&apos;s
-                        prospectus.
-                      </p>
+                    <CardDescription className="text-xs text-muted-foreground">
+                      as of Oct 25, 2023. This fund does not seek to follow a
+                      sustainable, impact or ESG investment strategy. The
+                      metrics do not change the fund&apos;s investment objective
+                      or constrain the fund&apos;s investable universe, and
+                      there is no indication that a sustainable, impact or ESG
+                      investment strategy will be adopted by the fund. For more
+                      information regarding the fund&apos;s investment strategy,
+                      please see the fund&apos;s prospectus.
                     </CardDescription>
                   </CardHeader>
                   <CardContent className="grid gap-16 md:grid-cols-1 lg:grid-cols-2">
