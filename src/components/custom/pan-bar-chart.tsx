@@ -59,6 +59,7 @@ export function PanBarChart() {
             position="bottom"
             formatter={(value: number) => `${value}%`}
             fontSize={8}
+            fill="#175a92"
           />
         </Bar>
         <Bar dataKey="benchmark" fill="#00e6d7">
@@ -67,6 +68,7 @@ export function PanBarChart() {
             position="bottom"
             formatter={(value: number) => `${value}%`}
             fontSize={8}
+            fill="#00e6d7"
           />
         </Bar>
       </BarChart>
