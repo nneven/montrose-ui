@@ -2424,7 +2424,26 @@ export type Holding = {
   accrualDate: string;
 };
 
+const WatchlistButton = () => {
+  const [isWatchlist, setIsWatchlist] = React.useState(false);
+
+  return (
+    <Button
+      variant="ghost"
+      onClick={() => setIsWatchlist(!isWatchlist)}
+      className="ml-5 text-lg text-yellow-400 hover:text-yellow-400"
+    >
+      {isWatchlist ? "★" : "☆"}
+    </Button>
+  );
+};
+
 export const columns: ColumnDef<Holding>[] = [
+  {
+    id: "watchlist",
+    header: () => <div className="text-center">Watchlist</div>,
+    cell: () => <WatchlistButton />,
+  },
   {
     accessorKey: "ticker",
     header: ({ column }) => {
