@@ -64,15 +64,17 @@ export default function DashboardPage() {
             </div>
           </div>
         </div>
-        <div className="flex-1 space-y-4 p-8 pt-6 max-w-7xl mx-auto">
+        <div className="flex-1 space-y-2 p-8 pt-6 max-w-7xl mx-auto">
           <div className="flex items-center justify-between space-y-2">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            {/* <img
-              src="https://www.blackrockbkcc.com/sites/g/files/knoqqb54001/themes/site/nir_pid76/dist/images/resizelogo.png"
+            <img
+              src="https://yt3.googleusercontent.com/mam4P3OD2amI1rA1EHmr35AvN4wM6OEqOcyG_X1bHj59FHj1j0E2wj04E_MCSA9zIFcJaMM5kQ=s900-c-k-c0x00ffffff-no-rj"
               alt="Fund Banner"
-              className="w-64"
-            /> */}
-            <h2 className="text-3xl font-bold tracking-tight">Anthropic</h2>
+              className="w-10 rounded-md mr-3"
+            />
+            <h2 className="text-3xl font-bold tracking-tight pb-1">
+              Anthropic
+            </h2>
             <div className="flex items-center ml-auto space-x-2">
               <CalendarDateRangePicker />
               <Button>Download</Button>
@@ -267,7 +269,7 @@ export default function DashboardPage() {
                       <Separator />
                       <li className="flex justify-between">
                         <span>Latest Funding Round</span>
-                        <span>$580 Million</span>
+                        <span>$750 Million</span>
                       </li>
                       <Separator />
                       <li className="flex justify-between">
