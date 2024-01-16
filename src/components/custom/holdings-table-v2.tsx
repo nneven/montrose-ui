@@ -412,7 +412,9 @@ export const columns: ColumnDef<Holding>[] = [
       </Button>
     ),
     cell: ({ row }) => (
-      <div className="w-44 text-left">{row.getValue("companyName")}</div>
+      <div className="w-44 font-medium text-left">
+        {row.getValue("companyName")}
+      </div>
     ),
   },
   {
