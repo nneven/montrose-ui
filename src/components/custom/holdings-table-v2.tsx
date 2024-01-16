@@ -405,14 +405,14 @@ export const columns: ColumnDef<Holding>[] = [
       <Button
         variant="ghost"
         onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
-        className="my-2"
+        className="my-3"
       >
         Company Name
         <CaretSortIcon className="ml-2 h-4 w-4" />
       </Button>
     ),
     cell: ({ row }) => (
-      <div className="w-44 font-medium text-left">
+      <div className="w-36 font-medium text-left">
         {row.getValue("companyName")}
       </div>
     ),
