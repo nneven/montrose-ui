@@ -27,7 +27,7 @@ import { SimpleLineChart } from "@/components/custom/line-chart";
 import { SimpleBarChart } from "@/components/custom/bar-chart";
 import { SimplePieChart } from "@/components/custom/pie-chart";
 import { SourceTable } from "@/components/custom/sources-table";
-import { TeamAccordion } from "@/components/custom/team-accordion";
+import { TeamAccordion } from "@/components/custom/team-accordion-v2";
 
 export const metadata: Metadata = {
   title: "Dashboard",
@@ -72,7 +72,7 @@ export default function DashboardPage() {
               alt="Fund Banner"
               className="w-64"
             /> */}
-            <h2 className="text-3xl font-bold tracking-tight">Company X</h2>
+            <h2 className="text-3xl font-bold tracking-tight">Anthropic</h2>
             <div className="flex items-center ml-auto space-x-2">
               <CalendarDateRangePicker />
               <Button>Download</Button>
@@ -198,25 +198,31 @@ export default function DashboardPage() {
               <div className="grid gap-4 md:grid-cols-1 lg:grid-cols-1">
                 <Card>
                   <CardHeader>
-                    <CardTitle>Executive Summary</CardTitle>
+                    <CardTitle>Description</CardTitle>
                   </CardHeader>
                   <CardContent>
                     <p className="text-sm">
-                      The iShares Robotics and Artificial Intelligence
-                      Multisector ETF (the “Fund”) seeks to track the investment
-                      results of an index composed of developed and emerging
-                      market companies that could benefit from the long-term
-                      growth and innovation in robotics technologies and
-                      artificial intelligence. It tracks the investment results
-                      of an index composed of developed and emerging market
-                      companies poised to benefit from growth in robotics
-                      technologies and AI. Launched on June 26, 2018, IRBO has
-                      $578.8 million in net assets and 111 holdings as of
-                      December 18, 2023. Its performance has been notable, with
-                      a year-to-date total return of 33.76% as of the same date.
-                      The ETF maintains an expense ratio of 0.47% and offers an
-                      equal-weighted index exposure across the robotics and AI
-                      value chain.
+                      Anthropic AI is an artificial intelligence research and
+                      deployment company founded in 2021 by former OpenAI
+                      employees, including siblings Dario and Daniela Amodei. It
+                      focuses on developing large-scale AI systems with a keen
+                      emphasis on safety and interpretability. The
+                      company&apos;s mission is to build reliable,
+                      interpretable, and steerable AI systems, with an
+                      overarching goal of ensuring that AI technologies are
+                      aligned with human values and can be trusted to act in
+                      humanity&apos;s best interest. One of their notable
+                      projects is the development of a language model named
+                      Claude, designed to be more transparent and easier to
+                      control than existing models. Anthropic AI has attracted
+                      significant attention and investment, including a $580
+                      million funding round led by Sam Bankman-Fried&apos;s
+                      Alameda Research. This funding highlights the
+                      industry&apos;s confidence in Anthropic&apos;s approach to
+                      AI safety and governance. The company is pioneering in the
+                      field of AI ethics and alignment, setting itself apart by
+                      focusing not just on the capabilities of AI, but also on
+                      the broader implications of its deployment in society.
                     </p>
                   </CardContent>
                 </Card>
@@ -232,68 +238,65 @@ export default function DashboardPage() {
                   <CardContent className="grid gap-16 md:grid-cols-1 lg:grid-cols-2">
                     <ul className="space-y-2">
                       <li className="flex justify-between">
-                        <span>Net Assets of Fund</span>
-                        <span>$578,835,390</span>
+                        <span>Company Founding Year</span>
+                        <span>2021</span>
                       </li>
                       <Separator />
                       <li className="flex justify-between">
-                        <span>Exchange</span>
-                        <span>NYSE Arca</span>
+                        <span>Latest Funding Round</span>
+                        <span>$580 Million</span>
                       </li>
                       <Separator />
                       <li className="flex justify-between">
-                        <span>Benchmark Index</span>
-                        <span className="text-right w-1/2">
-                          NYSE FactSet Global Robotics and Artificial
-                          Intelligence Index
-                        </span>
+                        <span>Lead Investor</span>
+                        <span>Alameda Research</span>
                       </li>
                       <Separator />
                       <li className="flex justify-between">
-                        <span>Shares Outstanding</span>
-                        <span>17,000,000</span>
+                        <span>Key Project</span>
+                        <span>Claude Language Model</span>
                       </li>
                       <Separator />
                       <li className="flex justify-between">
-                        <span>Premium/Discount</span>
-                        <span>0.18%</span>
+                        <span>Number of Employees</span>
+                        <span>Approx. 100</span>
                       </li>
                       <Separator />
                       <li className="flex justify-between">
-                        <span>Daily Volume</span>
-                        <span>116,869.00</span>
+                        <span>Headquarters Location</span>
+                        <span>San Francisco, CA</span>
                       </li>
                       <Separator />
                     </ul>
                     <ul className="space-y-2">
                       <li className="flex justify-between">
-                        <span>Fund Launch Date</span>
-                        <span>Jun 26, 2018</span>
+                        <span>Founders</span>
+                        <span>Dario and Daniela Amodei</span>
                       </li>
                       <Separator />
                       <li className="flex justify-between">
-                        <span>Asset Class</span>
-                        <span>Equity</span>
+                        <span>Company Mission</span>
+                        <span>Developing Safe and Interpretable AI</span>
                       </li>
                       <Separator />
                       <li className="flex justify-between">
-                        <span>Bloomberg Index Ticker</span>
-                        <span>NYFSRAIN</span>
+                        <span>Primary Focus Area</span>
+                        <span>AI Safety and Interpretability</span>
                       </li>
                       <Separator />
                       <li className="flex justify-between">
-                        <span>Distribution Frequency</span>
-                        <span>Semi-Annual</span>
+                        <span>Notable Collaborations</span>
+                        <span>TBD</span>
                       </li>
                       <Separator />
                       <li className="flex justify-between">
-                        <span>CUSIP</span>
-                        <span>46435U556</span>
+                        <span>Research Publications</span>
+                        <span>Multiple (Exact Number TBD)</span>
                       </li>
                       <Separator />
                       <li className="flex justify-between">
-                        <span>30 Day Median Bid/Ask Spread</span>
-                        <span>0.12%</span>
+                        <span>Global Impact</span>
+                        <span>Industry Influence in AI Ethics</span>
                       </li>
                       <Separator />
                     </ul>
@@ -303,11 +306,13 @@ export default function DashboardPage() {
               <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
                 <Card className="col-span-2">
                   <CardHeader className="-mb-4">
-                    <CardTitle>Portfolio Managers</CardTitle>
+                    <CardTitle>Leadership Team</CardTitle>
                     <CardDescription>
-                      Primarily responsible for the day-to-day management of the
-                      Fund. Each Portfolio Manager supervises a portfolio
-                      management team.
+                      This team comprises key individuals leading Anthropic,
+                      focusing on developing safe and interpretable AI
+                      technologies. Each plays a critical role in guiding the
+                      company&apos;s research, policy, and operational
+                      strategies.
                     </CardDescription>
                   </CardHeader>
                   <CardContent>
