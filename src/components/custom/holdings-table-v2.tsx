@@ -382,7 +382,7 @@ export const columns: ColumnDef<Holding>[] = [
       <Button
         variant="ghost"
         onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
-        className="my-2"
+        className="my-1"
       >
         Company Name
         <CaretSortIcon className="ml-2 h-4 w-4" />
