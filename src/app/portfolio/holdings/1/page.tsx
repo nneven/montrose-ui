@@ -64,7 +64,7 @@ export default function DashboardPage() {
             </div>
           </div>
         </div>
-        <div className="flex-1 space-y-4 p-8 pt-6">
+        <div className="flex-1 space-y-4 p-8 pt-6 max-w-7xl mx-auto">
           <div className="flex items-center justify-between space-y-2">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             {/* <img
@@ -72,23 +72,21 @@ export default function DashboardPage() {
               alt="Fund Banner"
               className="w-64"
             /> */}
-            <h2 className="text-3xl font-bold tracking-tight">
-              BlackRock iShares Robotics and AI Multisector ETF (IRBO)
-            </h2>
+            <h2 className="text-3xl font-bold tracking-tight">Company X</h2>
             <div className="flex items-center ml-auto space-x-2">
               <CalendarDateRangePicker />
               <Button>Download</Button>
             </div>
           </div>
           <Tabs defaultValue="overview" className="space-y-4">
-            <TabsList>
+            {/* <TabsList>
               <TabsTrigger value="overview">Overview</TabsTrigger>
-              {/* <TabsTrigger value="analytics">Analytics</TabsTrigger> */}
+              <TabsTrigger value="analytics">Analytics</TabsTrigger>
               <TabsTrigger value="reports">Reports</TabsTrigger>
               <TabsTrigger value="downloads">Data Room</TabsTrigger>
-            </TabsList>
+            </TabsList> */}
             <TabsContent value="overview" className="space-y-4">
-              <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+              {/* <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
                 <Card>
                   <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                     <CardTitle className="text-sm font-medium">
@@ -196,7 +194,7 @@ export default function DashboardPage() {
                     </p>
                   </CardContent>
                 </Card>
-              </div>
+              </div> */}
               <div className="grid gap-4 md:grid-cols-1 lg:grid-cols-1">
                 <Card>
                   <CardHeader>
@@ -343,7 +341,7 @@ export default function DashboardPage() {
                   </CardContent>
                 </Card>
               </div>
-              <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+              {/* <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
                 <Card className="col-span-1">
                   <CardHeader>
                     <CardTitle>
@@ -368,8 +366,8 @@ export default function DashboardPage() {
                     <SimpleLineChart />
                   </CardContent>
                 </Card>
-              </div>
-              <div className="grid gap-4 md:grid-cols-1 lg:grid-cols-1">
+              </div> */}
+              {/* <div className="grid gap-4 md:grid-cols-1 lg:grid-cols-1">
                 <Card>
                   <CardHeader>
                     <CardTitle>Portfolio Characteristics</CardTitle>
@@ -419,8 +417,8 @@ export default function DashboardPage() {
                     </ul>
                   </CardContent>
                 </Card>
-              </div>
-              <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+              </div> */}
+              {/* <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
                 <Card className="col-span-2">
                   <CardHeader>
                     <CardTitle>Sector Exposure</CardTitle>
@@ -449,8 +447,8 @@ export default function DashboardPage() {
                     product&apos;s total holdings, excluding currency holdings.
                   </CardFooter>
                 </Card>
-              </div>
-              <div className="grid gap-4 md:grid-cols-1 lg:grid-cols-1">
+              </div> */}
+              {/* <div className="grid gap-4 md:grid-cols-1 lg:grid-cols-1">
                 <Card>
                   <CardHeader>
                     <CardTitle>Holdings</CardTitle>
@@ -462,8 +460,8 @@ export default function DashboardPage() {
                     <DataTable />
                   </CardContent>
                 </Card>
-              </div>
-              <div className="grid gap-4 md:grid-cols-1 lg:grid-cols-1">
+              </div> */}
+              {/* <div className="grid gap-4 md:grid-cols-1 lg:grid-cols-1">
                 <Card>
                   <CardHeader>
                     <CardTitle>Sustainability Characteristics</CardTitle>
@@ -540,15 +538,15 @@ export default function DashboardPage() {
                     </ul>
                   </CardContent>
                 </Card>
-              </div>
+              </div> */}
             </TabsContent>
-            <TabsContent value="analytics" className="space-y-4"></TabsContent>
+            {/* <TabsContent value="analytics" className="space-y-4"></TabsContent>
             <TabsContent value="reports" className="space-y-4">
               <Card className="h-[120vh]">
                 <CardHeader>
                   <CardTitle className="flex flex-row items-center justify-between">
                     <span>December 12, 2023</span>
-                    {/* <Button>Download</Button> */}
+                    <Button>Download</Button>
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="h-[calc(100%-4rem)]">
@@ -561,22 +559,22 @@ export default function DashboardPage() {
             </TabsContent>
             <TabsContent value="downloads" className="space-y-4">
               <Card>
-                {/* <CardHeader>
+                <CardHeader>
                   <CardTitle>Data Sources</CardTitle>
-                </CardHeader> */}
+                </CardHeader>
                 <CardContent>
                   <SourceTable />
                 </CardContent>
               </Card>
-              {/* <Card>
+              <Card>
                 <CardHeader>
                   <CardTitle>Data Sources</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <DataSources />
                 </CardContent>
-              </Card> */}
-            </TabsContent>
+              </Card>
+            </TabsContent> */}
           </Tabs>
         </div>
       </div>
