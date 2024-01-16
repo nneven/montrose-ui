@@ -200,29 +200,52 @@ export default function DashboardPage() {
                   <CardHeader>
                     <CardTitle>Description</CardTitle>
                   </CardHeader>
+                  <CardContent className="-mb-4">
+                    <p className="text-sm">
+                      Anthropic PBC is an American artificial intelligence (AI)
+                      startup company, founded by former members of OpenAI.
+                      Anthropic develops general AI systems and large language
+                      models. It is a public-benefit corporation, and has been
+                      connected to the effective altruism movement. As of July
+                      2023, Anthropic had raised US$1.5 billion in funding. In
+                      September, Amazon announced an investment of up to US$4
+                      billion, followed by a $2 billion commitment from Google
+                      the following month.
+                    </p>
+                  </CardContent>
+                  <CardHeader>
+                    <CardTitle>Projects</CardTitle>
+                  </CardHeader>
                   <CardContent>
                     <p className="text-sm">
-                      Anthropic AI is an artificial intelligence research and
-                      deployment company founded in 2021 by former OpenAI
-                      employees, including siblings Dario and Daniela Amodei. It
-                      focuses on developing large-scale AI systems with a keen
-                      emphasis on safety and interpretability. The
-                      company&apos;s mission is to build reliable,
-                      interpretable, and steerable AI systems, with an
-                      overarching goal of ensuring that AI technologies are
-                      aligned with human values and can be trusted to act in
-                      humanity&apos;s best interest. One of their notable
-                      projects is the development of a language model named
-                      Claude, designed to be more transparent and easier to
-                      control than existing models. Anthropic AI has attracted
-                      significant attention and investment, including a $580
-                      million funding round led by Sam Bankman-Fried&apos;s
-                      Alameda Research. This funding highlights the
-                      industry&apos;s confidence in Anthropic&apos;s approach to
-                      AI safety and governance. The company is pioneering in the
-                      field of AI ethics and alignment, setting itself apart by
-                      focusing not just on the capabilities of AI, but also on
-                      the broader implications of its deployment in society.
+                      Anthropic, comprised of former researchers from
+                      OpenAI&apos;s GPT-2 and GPT-3 teams, developed its own AI
+                      chatbot named Claude, with a messaging interface similar
+                      to ChatGPT for detailed responses. Initially available
+                      through Slack, Claude is now accessible via claude.ai. Its
+                      name, either a nod to Claude Shannon or a departure from
+                      typically female-gendered AI assistant names, was chosen
+                      for its friendly and male-gendered connotation. Claude 2,
+                      launched in July 2023, was initially restricted to the US
+                      and UK, focusing heavily on safety during its model
+                      training. Dubbed &quot;Constitutional AI&quot;, this
+                      approach trains the chatbot on principles from the
+                      Universal Declaration of Human Rights and modern documents
+                      like Apple&apos;s terms of service, emphasizing values
+                      like freedom and equality.
+                      <br /> <br />
+                      In November 2023, Patronus AI&apos;s research compared
+                      Claude 2, OpenAI&apos;s GPT-4 and GPT-4-Turbo, and Meta
+                      AI&apos;s LLaMA-2 using a 150-question test based on SEC
+                      filings. The test had two versions: one requiring AI
+                      models to use a retrieval system to find relevant SEC
+                      filings and another providing specific filings for
+                      reference. The results showed that GPT-4-Turbo and LLaMA-2
+                      struggled in the retrieval test, failing 81% of questions,
+                      while in the long context window test, GPT-4-Turbo and
+                      Claude-2 missed 21% and 24% of the questions,
+                      respectively. Claude 2.1 was also released in November
+                      2023.
                     </p>
                   </CardContent>
                 </Card>
@@ -321,27 +344,34 @@ export default function DashboardPage() {
                 </Card>
                 <Card className="col-span-1">
                   <CardHeader>
-                    <CardTitle>Principal Investment Strategy</CardTitle>
+                    <CardTitle>History</CardTitle>
                   </CardHeader>
                   <CardContent>
                     <p className="text-sm">
-                      The iShares Robotics and Artificial Intelligence ETF
-                      (IRBO) tracks the NYSE® FactSet® Global Robotics and
-                      Artificial Intelligence Index. This index selects
-                      companies based on their involvement in 22 relevant
-                      robotics and AI sub-industries, with eligibility criteria
-                      including a minimum of 50% revenue generation or
-                      significant market share in these areas. <br /> <br />
-                      The Index, reviewed annually and rebalanced semi-annually,
-                      includes firms from 19 countries, representing industries
-                      like communication services and information technology.
-                      Companies must meet a $500 million float-adjusted market
-                      cap and a $2 million three-month average daily trading
-                      value for inclusion. <br /> <br />
-                      The Fund generally will invest at least 80% of its assets
-                      in the component securities of its Underlying Index and
-                      may invest up to 20% of its assets in certain futures,
-                      options and swap contracts, cash and cash equivalents.
+                      Founded in 2021 by former OpenAI senior members and
+                      siblings Daniela and Dario Amodei, Anthropic quickly
+                      diverged from OpenAI&apos;s direction, notably after
+                      OpenAI&apos;s collaboration with Microsoft in 2019. By May
+                      2023, the company had raised significant funding, totaling
+                      $1.15 billion, with major contributions from Alameda
+                      Research, Google Cloud, and Spark Capital. Google
+                      Cloud&apos;s investment included a 10% stake and a
+                      stipulation for Anthropic to utilize Google Cloud
+                      resources.
+                      <br />
+                      <br />
+                      Anthropic faced a lawsuit in February 2023 from Anthrop
+                      LLC over trademark issues and was characterized by The New
+                      York Times&apos; Kevin Roose as the &quot;Center of A.I.
+                      Doomerism.&quot; The company&apos;s association with the
+                      effective altruism movement and ties to notable figures
+                      like Sam Bankman-Fried of FTX have been highlighted by
+                      journalists. In a strategic shift towards cloud services,
+                      Amazon and Google made substantial investments in
+                      Anthropic in late 2023, with Amazon becoming a minority
+                      stakeholder and Google committing an additional $1.5
+                      billion over time, alongside using Amazon Web Services as
+                      its primary cloud provider.
                     </p>
                   </CardContent>
                 </Card>
