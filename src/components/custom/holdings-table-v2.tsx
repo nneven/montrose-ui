@@ -536,7 +536,7 @@ export const columns: ColumnDef<Holding>[] = [
     accessorKey: "url",
     header: () => <div className="text-right pr-4">Details</div>,
     aggregatedCell: ({ row }) => (
-      <Button asChild variant="ghost">
+      <Button asChild variant="ghost" className="-my-1">
         <Link href="/portfolio/holdings/1">
           <MagnifyingGlassIcon className="ml-2 h-5 w-5" />
         </Link>
@@ -648,7 +648,18 @@ export function DataTable() {
                   // data-state={row.getIsSelected() && "selected"}
                 >
                   {row.getVisibleCells().map((cell) => (
-                    <TableCell key={cell.id}>
+                    <TableCell
+                      key={cell.id}
+                      className={
+                        cell.getIsGrouped()
+                          ? "bg-white"
+                          : cell.getIsAggregated()
+                          ? "bg-white"
+                          : cell.getIsPlaceholder()
+                          ? "bg-slate-100"
+                          : "bg-slate-100"
+                      }
+                    >
                       {cell.getIsGrouped() ? (
                         // If it's a grouped cell, add an expander and row count
                         <>
