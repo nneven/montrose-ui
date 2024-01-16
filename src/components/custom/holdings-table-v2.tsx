@@ -482,12 +482,24 @@ export const columns: ColumnDef<Holding>[] = [
     accessorKey: "periodChangeInValue",
     header: () => <div className="text-right pr-4">Period Change In Value</div>,
     cell: ({ row }) => (
-      <div className="text-right font-medium pr-4">
+      <div
+        className={`text-right font-medium pr-4 ${
+          Number(row.getValue("periodChangeInValue")) >= 0
+            ? "text-green-600"
+            : "text-red-600"
+        }`}
+      >
         {formatCurrency(row.getValue("periodChangeInValue"))}
       </div>
     ),
     aggregatedCell: ({ row }) => (
-      <div className="text-right font-medium pr-4">
+      <div
+        className={`text-right font-medium pr-4 ${
+          Number(row.getValue("periodChangeInValue")) >= 0
+            ? "text-green-600"
+            : "text-red-600"
+        }`}
+      >
         {formatCurrency(row.getValue("periodChangeInValue"))}
       </div>
     ),
