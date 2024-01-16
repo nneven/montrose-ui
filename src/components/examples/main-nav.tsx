@@ -9,7 +9,8 @@ export function MainNav({
   ...props
 }: React.HTMLAttributes<HTMLElement>) {
   const pathname = usePathname();
-  const isCurrentPage = (href: string) => href === pathname;
+  const isCurrentPage = (href: string) =>
+    pathname === href || pathname.startsWith(href + "/");
 
   return (
     <nav
