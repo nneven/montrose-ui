@@ -1,10 +1,11 @@
 "use client";
 
 import * as React from "react";
+import Link from "next/link";
 import {
   CaretSortIcon,
   ChevronDownIcon,
-  DotsHorizontalIcon,
+  MagnifyingGlassIcon,
 } from "@radix-ui/react-icons";
 import {
   ColumnDef,
@@ -23,7 +24,6 @@ import {
 } from "@tanstack/react-table";
 
 import { Button } from "@/components/ui/button";
-import { Checkbox } from "@/components/ui/checkbox";
 import {
   DropdownMenu,
   DropdownMenuCheckboxItem,
@@ -376,126 +376,40 @@ export const columns: ColumnDef<Holding>[] = [
   //   // cell: () => <WatchlistButton />,
   //   aggregatedCell: () => <WatchlistButton />,
   // },
-  // {
-  //   accessorKey: "ticker",
-  //   header: ({ column }) => {
-  //     return (
-  //       <Button
-  //         variant="ghost"
-  //         onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
-  //       >
-  //         Ticker
-  //         <CaretSortIcon className="ml-2 h-4 w-4" />
-  //       </Button>
-  //     );
-  //   },
-  //   cell: ({ row }) => (
-  //     <div className="uppercase pl-4">{row.getValue("ticker")}</div>
-  //   ),
-  // },
   {
     accessorKey: "companyName",
-    header: ({ column }) => {
-      return (
-        <Button
-          variant="ghost"
-          onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
-          className="my-2"
-        >
-          Company Name
-          <CaretSortIcon className="ml-2 h-4 w-4" />
-        </Button>
-      );
-    },
+    header: ({ column }) => (
+      <Button
+        variant="ghost"
+        onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+        className="my-2"
+      >
+        Company Name
+        <CaretSortIcon className="ml-2 h-4 w-4" />
+      </Button>
+    ),
     cell: ({ row }) => (
       <div className="w-44 text-left">{row.getValue("companyName")}</div>
     ),
-    // cell: ({ row, getValue }) => (
-    //   <div
-    //     style={{
-    //       // Since rows are flattened by default,
-    //       // we can use the row.depth property
-    //       // and paddingLeft to visually indicate the depth
-    //       // of the row
-    //       paddingLeft: `${row.depth * 2}rem`,
-    //     }}
-    //   >
-    //     {row.getCanExpand() && (
-    //       <button
-    //         {...{
-    //           onClick: row.getToggleExpandedHandler(),
-    //           style: { cursor: "pointer" },
-    //         }}
-    //       >
-    //         {getValue() as string} {row.getIsExpanded() ? "↑" : "↓"}
-    //       </button>
-    //     )}
-    //   </div>
-    // ),
   },
   {
     accessorKey: "gpName",
-    header: ({ column }) => {
-      return (
-        <Button
-          variant="ghost"
-          onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
-          className=""
-        >
-          Funds
-          <CaretSortIcon className="ml-2 h-4 w-4" />
-        </Button>
-      );
-    },
+    header: ({ column }) => (
+      <Button
+        variant="ghost"
+        onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+        className=""
+      >
+        Funds
+        <CaretSortIcon className="ml-2 h-4 w-4" />
+      </Button>
+    ),
     cell: ({ row }) => <div className="ml-4">{row.getValue("gpName")}</div>,
     aggregatedCell: ({ row }) => (
       <div className="ml-4">{row.getValue("gpName")}</div>
     ),
     aggregationFn: "count",
   },
-  // {
-  //   accessorKey: "assetClass",
-  //   header: ({ column }) => {
-  //     return (
-  //       <Button
-  //         variant="ghost"
-  //         onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
-  //         className="-ml-4"
-  //       >
-  //         Asset Class
-  //         <CaretSortIcon className="ml-2 h-4 w-4" />
-  //       </Button>
-  //     );
-  //   },
-  //   cell: ({ row }) => <div>{row.getValue("assetClass")}</div>,
-  // },
-  // {
-  //   accessorKey: "marketValue",
-  //   header: () => <div className="text-right pr-4">Market Value</div>,
-  //   cell: ({ row }) => (
-  //     <div className="text-right font-medium pr-4">
-  //       ${row.getValue("marketValue")}
-  //     </div>
-  //   ),
-  // },
-  // {
-  //   accessorKey: "weight",
-  //   header: () => <div className="text-right pr-4">Weight</div>,
-  //   cell: ({ row }) => (
-  //     <div className="text-right font-medium pr-4">
-  //       {row.getValue("weight")}%
-  //     </div>
-  //   ),
-  // },
-  // {
-  //   accessorKey: "shares",
-  //   header: () => <div className="text-right pr-4">Shares</div>,
-  //   cell: ({ row }) => (
-  //     <div className="text-right font-medium pr-4">
-  //       {row.getValue("shares")}
-  //     </div>
-  //   ),
-  // },
   {
     accessorKey: "investmentAmount",
     header: () => <div className="text-right pr-4">Investment Amount</div>,
@@ -618,6 +532,17 @@ export const columns: ColumnDef<Holding>[] = [
     ),
     aggregationFn: "mean",
   },
+  {
+    accessorKey: "url",
+    header: () => <div className="text-right pr-4">Details</div>,
+    aggregatedCell: ({ row }) => (
+      <Button asChild variant="ghost">
+        <Link href="/portfolio/holdings/1">
+          <MagnifyingGlassIcon className="ml-2 h-5 w-5" />
+        </Link>
+      </Button>
+    ),
+  },
 ];
 
 export function DataTable() {
@@ -635,13 +560,13 @@ export function DataTable() {
     columns,
     onSortingChange: setSorting,
     onColumnFiltersChange: setColumnFilters,
+    onColumnVisibilityChange: setColumnVisibility,
+    onRowSelectionChange: setRowSelection,
+    onExpandedChange: setExpanded,
     getCoreRowModel: getCoreRowModel(),
     getPaginationRowModel: getPaginationRowModel(),
     getSortedRowModel: getSortedRowModel(),
     getFilteredRowModel: getFilteredRowModel(),
-    onColumnVisibilityChange: setColumnVisibility,
-    onRowSelectionChange: setRowSelection,
-    onExpandedChange: setExpanded,
     getExpandedRowModel: getExpandedRowModel(),
     getGroupedRowModel: getGroupedRowModel(),
     state: {
